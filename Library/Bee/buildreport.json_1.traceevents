@@ -1,0 +1,701 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1677084562924854, "dur": 173298, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1677084562925035, "dur": 16247, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1677084562941287, "dur": 152779, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1677084563094067, "dur": 4084, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1677084563098615, "dur": 6, "ph": "X", "name": "", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1677084562965618, "dur":1035, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084562966659, "dur":221, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1677084562966896, "dur":18, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1677084562966915, "dur":426, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1677084562967361, "dur":432, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084562967793, "dur":0, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563061622, "dur":424, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062046, "dur":18, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062064, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062067, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062076, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062077, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062082, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062083, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062086, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062087, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062092, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062092, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062096, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062097, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062102, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062103, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062107, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062107, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062112, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062112, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062118, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062119, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062122, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062123, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062127, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062128, "dur":16, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062144, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062144, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062148, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062148, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062153, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062154, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062159, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062171, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563062186, "dur":1544, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1677084562967953, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562967954, "dur":6239, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562974194, "dur":359, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1677084562974553, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562974583, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562979689, "dur":1553, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1677084562981273, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677084562981310, "dur":591, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562981908, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562981916, "dur":2777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677084562984753, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677084562984837, "dur":301, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562985177, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562985182, "dur":3896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677084562989135, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677084562989184, "dur":146, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562989337, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562989343, "dur":3175, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677084562992561, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677084562992603, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562992660, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562992666, "dur":3577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677084562996284, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677084562996335, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562996432, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562996439, "dur":2828, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677084562999300, "dur":177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677084562999478, "dur":254, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562999738, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084562999758, "dur":1889, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677084563001681, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677084563001712, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084563001841, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084563001846, "dur":2579, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677084563004477, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":1, "ts":1677084563004628, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084563004668, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084563004996, "dur":1598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":1, "ts":1677084563006646, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/resources.assets" }}
+,{ "pid":12345, "tid":1, "ts":1677084563006700, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677084563006706, "dur":2057, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/resources.assets" }}
+,{ "pid":12345, "tid":1, "ts":1677084563008795, "dur":52858, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562967661, "dur":140, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562967801, "dur":6383, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562974192, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1677084562974335, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562974480, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562976506, "dur":2537, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1677084562979091, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":2, "ts":1677084562979162, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562979266, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562979283, "dur":3148, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":2, "ts":1677084562982468, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677084562982507, "dur":888, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562983401, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562983409, "dur":3691, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677084562987147, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677084562987186, "dur":223, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562987413, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562987418, "dur":3153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677084562990625, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677084562990676, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562990794, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562990799, "dur":3599, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677084562994461, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677084562994514, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562994670, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562994681, "dur":3174, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677084562997898, "dur":479, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677084562998377, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562998447, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084562998453, "dur":2263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677084563000743, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677084563000790, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084563000874, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084563000881, "dur":1719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677084563002643, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677084563002688, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084563002765, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084563002772, "dur":4238, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677084563007071, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1677084563007120, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677084563007125, "dur":2010, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1677084563009178, "dur":52463, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562967665, "dur":140, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562967805, "dur":6380, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562974192, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1677084562974381, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562974432, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562975947, "dur":2899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1677084562978885, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1677084562978981, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562979017, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562979025, "dur":1121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1677084562980204, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084562980247, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562980363, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562980613, "dur":2027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084562982676, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084562982705, "dur":683, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562983393, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562983402, "dur":3562, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084562987010, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084562987056, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562987126, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562987132, "dur":2629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084562989806, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084562989842, "dur":565, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562990435, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562990443, "dur":3047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084562993537, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084562993592, "dur":169, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562993768, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562993776, "dur":2948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084562996757, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084562996786, "dur":555, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562997346, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084562997353, "dur":2813, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084563000206, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084563000349, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084563000435, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084563000440, "dur":2199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084563002672, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084563002710, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084563002766, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084563002776, "dur":2535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677084563005359, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":3, "ts":1677084563005415, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677084563005422, "dur":3770, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":3, "ts":1677084563009229, "dur":52468, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677084562967831, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677084562967832, "dur":6351, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677084562974192, "dur":447, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":4, "ts":1677084562974640, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677084562974843, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677084562976328, "dur":2763, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":4, "ts":1677084562979174, "dur":164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677084562979338, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677084562979394, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677084562979403, "dur":18871, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677084562998309, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677084562998519, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677084562998594, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677084562998598, "dur":2298, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677084563000939, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677084563000985, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677084563001109, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677084563001116, "dur":1896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677084563003073, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677084563003152, "dur":226, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677084563003402, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677084563003408, "dur":2609, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677084563006078, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1677084563006141, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677084563006147, "dur":2127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1677084563008356, "dur":53267, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562967720, "dur":92, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562967812, "dur":6376, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562974192, "dur":324, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1677084562974516, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562974566, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562979269, "dur":1555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1677084562980866, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084562980909, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562981044, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562981051, "dur":2821, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084562983931, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084562983980, "dur":596, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562984583, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562984592, "dur":3027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084562987654, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084562987698, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562987832, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562987840, "dur":3197, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084562991075, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084562991104, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562991174, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562991181, "dur":3466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084562994690, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084562994735, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562994871, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562994881, "dur":4157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084562999081, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084562999211, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562999291, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084562999297, "dur":2148, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084563001482, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084563001518, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084563001636, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084563001641, "dur":2383, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084563004066, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084563004099, "dur":146, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084563004250, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084563004257, "dur":2698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677084563007036, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/level0" }}
+,{ "pid":12345, "tid":5, "ts":1677084563007082, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677084563007087, "dur":1948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/level0" }}
+,{ "pid":12345, "tid":5, "ts":1677084563009072, "dur":52562, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562967839, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562967839, "dur":6361, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562974201, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1677084562974354, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562974491, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562977526, "dur":1792, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1677084562979369, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084562979421, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562979461, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562980070, "dur":1954, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084562982053, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084562982090, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562982126, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562982132, "dur":3161, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084562985327, "dur":255, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084562985582, "dur":813, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562986400, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562986407, "dur":2753, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084562989202, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084562989263, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562989327, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562989334, "dur":2393, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084562991760, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084562991791, "dur":635, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562992430, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562992437, "dur":3882, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084562996379, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084562996427, "dur":138, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562996571, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084562996581, "dur":3067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084562999676, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084562999820, "dur":201, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084563000026, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084563000033, "dur":1941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084563002013, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084563002056, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084563002129, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084563002135, "dur":2262, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084563004456, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084563004612, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084563004616, "dur":2048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677084563006708, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1677084563006774, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677084563006780, "dur":1806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1677084563008621, "dur":53004, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562967796, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562967797, "dur":6382, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562974193, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":7, "ts":1677084562974194, "dur":306, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562974502, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/app.info" }}
+,{ "pid":12345, "tid":7, "ts":1677084562974504, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562974542, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562978347, "dur":1330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/app.info" }}
+,{ "pid":12345, "tid":7, "ts":1677084562979678, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084562979726, "dur":230, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562979961, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562980113, "dur":1997, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084562982159, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084562982211, "dur":153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562982368, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562982374, "dur":2925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084562985354, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084562985402, "dur":996, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562986404, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562986411, "dur":2701, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084562989162, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084562989216, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562989327, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562989335, "dur":2457, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084562991822, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084562991846, "dur":541, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562992391, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562992398, "dur":2615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084562995053, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084562995086, "dur":198, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562995289, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562995296, "dur":3684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084562999019, "dur":155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084562999174, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562999288, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084562999296, "dur":1983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084563001324, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084563001369, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084563001431, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084563001436, "dur":2664, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084563004145, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084563004181, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084563004256, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084563004262, "dur":2283, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677084563006590, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1677084563006635, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677084563006640, "dur":1936, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1677084563008614, "dur":53026, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562968020, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562968021, "dur":6305, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562974327, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1677084562974506, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562974554, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562978561, "dur":1703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1677084562980306, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084562980356, "dur":220, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562980581, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562980644, "dur":2897, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084562983586, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084562983627, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562983672, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562983679, "dur":3482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084562987206, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084562987244, "dur":159, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562987409, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562987416, "dur":3189, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084562990654, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084562990701, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562990799, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562990817, "dur":3739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084562994639, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084562994713, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562994854, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562994861, "dur":3285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084562998182, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084562998221, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562998347, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084562998352, "dur":2233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084563000625, "dur":238, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084563000863, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084563000983, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084563000988, "dur":1930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084563002951, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084563002981, "dur":395, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084563003380, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084563003401, "dur":2730, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677084563006183, "dur":205, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":8, "ts":1677084563006389, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084563006433, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677084563006458, "dur":1981, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":8, "ts":1677084563008480, "dur":53140, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084562967987, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084562967988, "dur":6199, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084562974193, "dur":184, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1677084562974378, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084562974476, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084562976513, "dur":2583, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1677084562979165, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":9, "ts":1677084562979248, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084562979289, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084562979497, "dur":10171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":9, "ts":1677084562989723, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1677084562989782, "dur":629, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084562990448, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084562990457, "dur":3409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1677084562993892, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":9, "ts":1677084562993918, "dur":177, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084562994100, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084562994106, "dur":2644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":9, "ts":1677084562996781, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":9, "ts":1677084562996896, "dur":447, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084562997349, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084562997380, "dur":2255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":9, "ts":1677084562999672, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":9, "ts":1677084562999793, "dur":225, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084563000023, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084563000030, "dur":2212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":9, "ts":1677084563002277, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":9, "ts":1677084563002321, "dur":162, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084563002489, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084563002496, "dur":2858, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":9, "ts":1677084563005417, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1677084563005488, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677084563005493, "dur":12199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1677084563017716, "dur":43935, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084562968016, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084562968017, "dur":6175, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084562974194, "dur":200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":10, "ts":1677084562974394, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084562974484, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084562977139, "dur":2112, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":10, "ts":1677084562979300, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":10, "ts":1677084562979395, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084562979438, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084562980106, "dur":11163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":10, "ts":1677084562991337, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677084562991390, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084562991457, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084562991463, "dur":3399, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677084562994933, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677084562994979, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084562995112, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084562995119, "dur":3684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677084562998838, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677084562998960, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084562999008, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084562999013, "dur":2327, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677084563001388, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677084563001424, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084563001521, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084563001527, "dur":2908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677084563004489, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":10, "ts":1677084563004548, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084563004633, "dur":1729, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":10, "ts":1677084563006411, "dur":165, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":10, "ts":1677084563006577, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084563006619, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084563006626, "dur":1309, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":10, "ts":1677084563007975, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/boot.config" }}
+,{ "pid":12345, "tid":10, "ts":1677084563008113, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084563008158, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677084563008164, "dur":1130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/boot.config" }}
+,{ "pid":12345, "tid":10, "ts":1677084563009315, "dur":52327, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562968167, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562968168, "dur":6029, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562974198, "dur":337, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1677084562974535, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562974582, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562980102, "dur":2354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1677084562982488, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677084562982519, "dur":869, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562983394, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562983402, "dur":3566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677084562987020, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677084562987072, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562987133, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562987140, "dur":2655, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677084562989827, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677084562989855, "dur":560, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562990452, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562990460, "dur":2575, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677084562993076, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677084562993116, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562993292, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562993299, "dur":3076, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677084562996420, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677084562996460, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562996572, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562996579, "dur":2835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677084562999440, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677084562999539, "dur":189, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562999732, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084562999737, "dur":2233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677084563002002, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677084563002034, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084563002131, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084563002138, "dur":2447, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677084563004634, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":11, "ts":1677084563004685, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677084563004691, "dur":5982, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":11, "ts":1677084563010704, "dur":50933, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562968215, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562968215, "dur":5986, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562974201, "dur":231, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1677084562974432, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562974493, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562977545, "dur":1629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1677084562979218, "dur":584, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter.exe" }}
+,{ "pid":12345, "tid":12, "ts":1677084562979802, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562979947, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562979952, "dur":1431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter.exe" }}
+,{ "pid":12345, "tid":12, "ts":1677084562981410, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677084562981438, "dur":454, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562981898, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562981904, "dur":3108, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677084562985040, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677084562985068, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562985181, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562985189, "dur":4533, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677084562989771, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677084562989815, "dur":590, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562990413, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562990445, "dur":2851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677084562993370, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677084562993438, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562993587, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562993597, "dur":3102, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677084562996730, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677084562996763, "dur":585, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562997371, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084562997380, "dur":2589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677084562999995, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677084563000118, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084563000196, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084563000203, "dur":2235, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677084563002466, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677084563002510, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084563002635, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084563002643, "dur":3958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677084563006657, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/level1.resS" }}
+,{ "pid":12345, "tid":12, "ts":1677084563006705, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677084563006711, "dur":2056, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/level1.resS" }}
+,{ "pid":12345, "tid":12, "ts":1677084563008805, "dur":52823, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562968256, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562968256, "dur":5939, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562974197, "dur":470, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":13, "ts":1677084562974668, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562974845, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562976283, "dur":2319, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":13, "ts":1677084562978659, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":13, "ts":1677084562978732, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562978901, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562978906, "dur":1711, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":13, "ts":1677084562980671, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677084562980742, "dur":197, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562980944, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562980950, "dur":2831, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677084562983820, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677084562983862, "dur":707, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562984573, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562984581, "dur":3278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677084562987921, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677084562987969, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562988083, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562988089, "dur":3190, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677084562991327, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677084562991372, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562991448, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562991455, "dur":3362, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677084562994855, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677084562994911, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562995002, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562995010, "dur":3337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677084562998389, "dur":381, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677084562998770, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562998825, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084562998832, "dur":2041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677084563000907, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677084563000939, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084563001108, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084563001114, "dur":3728, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677084563004886, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":13, "ts":1677084563004949, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677084563004955, "dur":56596, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":13, "ts":1677084563061576, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":13, "ts":1677084563061577, "dur":1, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562968296, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562968296, "dur":5958, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562974255, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":14, "ts":1677084562974435, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562974482, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562976948, "dur":2202, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":14, "ts":1677084562979197, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/UnityCrashHandler32.exe" }}
+,{ "pid":12345, "tid":14, "ts":1677084562979301, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562979335, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562979341, "dur":4771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/UnityCrashHandler32.exe" }}
+,{ "pid":12345, "tid":14, "ts":1677084562984147, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677084562984177, "dur":401, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562984584, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562984592, "dur":3289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677084562987921, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677084562987965, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562988058, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562988064, "dur":3533, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677084562991635, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677084562991728, "dur":658, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562992392, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562992399, "dur":3052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677084562995481, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677084562995506, "dur":616, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562996126, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562996132, "dur":2856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677084562999030, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677084562999175, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562999289, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084562999296, "dur":2141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677084563001485, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677084563001525, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084563001641, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084563001663, "dur":2387, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677084563004090, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677084563004135, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084563004249, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677084563004256, "dur":5962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677084563010244, "dur":51378, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562968395, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562968395, "dur":5803, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562974198, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":15, "ts":1677084562974334, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562974389, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562976304, "dur":2806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":15, "ts":1677084562979154, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084562979252, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562979295, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562979507, "dur":4675, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084562984215, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084562984250, "dur":324, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562984579, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562984587, "dur":3014, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084562987644, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084562987691, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562987830, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562987837, "dur":3207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084562991085, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084562991116, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562991171, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562991178, "dur":3557, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084562994803, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084562994852, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562995006, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562995016, "dur":3582, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084562998645, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084562998760, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562998827, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084562998832, "dur":2209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084563001076, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084563001120, "dur":162, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084563001288, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084563001294, "dur":2222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084563003550, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084563003594, "dur":295, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084563003895, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084563003902, "dur":3131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677084563007071, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":15, "ts":1677084563007112, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677084563007117, "dur":2071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":15, "ts":1677084563009235, "dur":52397, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562968443, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562968444, "dur":5746, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562974191, "dur":374, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":16, "ts":1677084562974565, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562974601, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562980527, "dur":1695, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":16, "ts":1677084562982268, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1677084562982305, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562982369, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562982375, "dur":2928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1677084562985360, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1677084562985403, "dur":1042, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562986450, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562986456, "dur":3163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1677084562989665, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1677084562989712, "dur":704, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562990457, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562990465, "dur":3236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1677084562993723, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1677084562993755, "dur":339, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562994099, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562994105, "dur":3405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1677084562997544, "dur":334, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":16, "ts":1677084562997879, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562998027, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084562998033, "dur":2110, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":16, "ts":1677084563000181, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":16, "ts":1677084563000322, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084563000440, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084563000446, "dur":2190, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":16, "ts":1677084563002680, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":16, "ts":1677084563002721, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084563002764, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084563002773, "dur":3835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":16, "ts":1677084563006802, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/level0.resS" }}
+,{ "pid":12345, "tid":16, "ts":1677084563006892, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677084563006898, "dur":2165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/pkill/Documents/Unity/Builds/Galaxy Shooter/Windows/Galaxy Shooter_Data/level0.resS" }}
+,{ "pid":12345, "tid":16, "ts":1677084563009108, "dur":52530, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677084563064814, "dur":1519, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1677084563098677, "dur": 603, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1677084563098585, "dur": 712, "ph": "X", "name": "Write chrome-trace events", "args": {} },
