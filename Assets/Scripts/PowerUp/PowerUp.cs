@@ -13,14 +13,6 @@ public class PowerUp : MonoBehaviour
     private float _verticalMovement;
     [SerializeField]
     private float _destroyHeight;
-    /*
-     * ID for powerups
-     * 0 = Triple Shot
-     * 1 = Speed
-     * 2 = Shields
-    */
-    [SerializeField]
-    private int _powerupID;
 
     // Audio
     private AudioSource _audioSource;
@@ -71,50 +63,21 @@ public class PowerUp : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.transform.tag == "Player")
+        if(collision.tag == "Player")
         {
-            Player player = other.transform.GetComponent<Player>();
-            ScrollingBackground scrollingBackground = FindObjectOfType<ScrollingBackground>().GetComponent<ScrollingBackground>();
-            float audioLength;
-
-            if (player != null)
-            {
-                switch(_powerupID)
-                {
-                    case 0: // Tripleshot
-                        player.TripleShotActive();
-                        break;
-                    case 1: // Fuel
-                        _engine.FuelPowerup();
-                        break;
-                    case 2: // Shields
-                        player.ShieldsActive();
-                        break;
-                    case 3: // Ammo
-
-                        break;
-                    default:
-                        Debug.LogWarning("You did something silly with powerup IDs!!!");
-                        break;
-                }
-            }
-
-            _spriteRenderer.enabled = false;
-            audioLength = _powerUpAudioClip.length;
-            _audioSource.PlayOneShot(_powerUpAudioClip, _powerUpAudioVolume);
-            Destroy(gameObject, audioLength);
-        }
-
-        /*
-        // Allow player to destroy powerup by accident?
-        if (other.transform.tag == "Laser")
-        {
-            Destroy(other.transform.gameObject);
             Destroy(this.gameObject);
         }
-        */
     }
+
+    /*
+    // Allow player to destroy powerup by accident?
+    if (other.transform.tag == "Laser")
+    {
+        Destroy(other.transform.gameObject);
+        Destroy(this.gameObject);
+    }
+    */
 
 }

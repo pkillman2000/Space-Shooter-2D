@@ -32,12 +32,6 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     private float _spawnHeight;
 
-
-
-    void Start()
-    {
-    }
-
     IEnumerator SpawnEnemyRoutine()
     {
         float currentSpawnTime;

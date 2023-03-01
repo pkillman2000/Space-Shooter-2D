@@ -13,6 +13,8 @@ public class Explosion : MonoBehaviour
         {
             Debug.LogWarning("Animator is Null!");
         }
+
+        DestroyAnimation();
     }
 
     private void DestroyAnimation()
@@ -22,8 +24,9 @@ public class Explosion : MonoBehaviour
 
         clipInfo = _animator.runtimeAnimatorController.animationClips;
         animLength = clipInfo[0].length;
+        Debug.Log("Explosion Length: " + animLength);
 
-        Destroy(this.gameObject, animLength);
+        Destroy(gameObject, animLength);
     }
 
 }

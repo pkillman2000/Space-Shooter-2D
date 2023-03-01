@@ -8,6 +8,11 @@ TagManager:
   - Laser
   - PowerUp
   - Enemy Laser
+  - Ammo Powerup
+  - Shield Powerup
+  - Tripleshot Powerup
+  - Fuel Powerup
+  - Health Powerup
   layers:
   - Default
   - TransparentFX

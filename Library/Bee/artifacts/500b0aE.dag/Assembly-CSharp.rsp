@@ -358,6 +358,7 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Animations/Asteroid.cs"
 "Assets/Scripts/Animations/Explosion.cs"
+"Assets/Scripts/Animations/RotateObject.cs"
 "Assets/Scripts/Animations/ScrollingBackground.cs"
 "Assets/Scripts/Enemy/Enemy.cs"
 "Assets/Scripts/Managers/GameManager.cs"
@@ -370,6 +371,7 @@
 "Assets/Scripts/Player/Weapons.cs"
 "Assets/Scripts/PowerUp/PowerUp.cs"
 "Assets/Scripts/Weapons]/LaserProjectile.cs"
+"Assets/Scripts/Weapons]/MissileHoming.cs"
 -langversion:9.0
 
 /deterministic

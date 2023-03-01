@@ -41,7 +41,6 @@ public class Engines : MonoBehaviour
     private float _fuelFlowRate;
 
     // External classes
-    private Player _player;
     private ScrollingBackground _scrollingBackground;
     private UIManager _uiManager;
 
@@ -49,12 +48,6 @@ public class Engines : MonoBehaviour
     {
         // Reset player position
         transform.position = new Vector3(0, -2, 0);
-
-        _player = GameObject.Find("Player").GetComponent<Player>();
-        if (_player == null)
-        {
-            Debug.LogWarning("Player is Null!");
-        }
 
         _scrollingBackground = GameObject.Find("Scrolling Background").GetComponent<ScrollingBackground>();
         if (_scrollingBackground == null)
@@ -138,31 +131,17 @@ public class Engines : MonoBehaviour
         transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, _lowerBoundary, _upperBoundary), 0);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Fuel Powerup")
+        {
+            FuelPowerup();
+        }
+    }
+
     public void FuelPowerup()
     {
         _currentFuel = _maximumFuel;
         _uiManager.UpdateThrusterBar(_maximumFuel, _currentFuel);
     }
-
-    // * Move horizontal
-    // * Move vertical
-
-    // * Boundaries
-
-    // Normal Speed
-        // -> Scrolling Background - Normal speed
-        // * Hide boosted engine particle
-        // * Play normal engine SFX
-
-    // Boosted Speed (left shift)
-        // Do we have fuel?
-            // * Subtract Fuel
-            // * -> UI Manager - Update Fuel
-            // -> Scrolling Background - Boosted speed
-            // * Show boosted engine particle
-            // * Play boosted engine SFX
-
-    // Add Fuel <- Player (powerup collision)
-    // -> UI Manager - Update Fuel
-
 }

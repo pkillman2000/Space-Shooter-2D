@@ -50,7 +50,10 @@ public class Enemy : MonoBehaviour
     private float _minLaserFireTime;
     [SerializeField]
     private float _maxLaserFireTime;
+    [SerializeField]
+    private bool _canFire;
 
+    private UIManager _uiManager;
 
     private void Start()
     {
@@ -59,6 +62,7 @@ public class Enemy : MonoBehaviour
         {
             Debug.LogWarning("Player Is Null!");
         }
+
         _animator = gameObject.GetComponent<Animator>();
         if(_animator == null ) 
         {
@@ -71,6 +75,13 @@ public class Enemy : MonoBehaviour
             Debug.LogWarning("Audio Source is Null!");
         }
 
+        _uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
+        if(_uiManager == null )
+        {
+            Debug.LogWarning("UI Manager is Null!");
+        }
+
+        _canFire = true;
         StartCoroutine(FireLasers());
     }
 
@@ -104,11 +115,13 @@ public class Enemy : MonoBehaviour
         while (!_isDestroyed)
         {
             yield return new WaitForSeconds(Random.Range(_minLaserFireTime, _maxLaserFireTime));
-            Instantiate(_laserPrefab, this.transform.position, Quaternion.identity);
-            _audioSource.PlayOneShot(_laserAudioClip, _laserVolume);
+            if(_canFire)
+            {
+                Instantiate(_laserPrefab, this.transform.position, Quaternion.identity);
+                _audioSource.PlayOneShot(_laserAudioClip, _laserVolume);
+            }
         }
     }
-
 
     // This was created for testing purposes.  If the enemy moves off the bottom
     // of the screen, it is moved back to a spawning point. It is a possible game variation.
@@ -125,21 +138,16 @@ public class Enemy : MonoBehaviour
         if (!_isDestroyed)
         {
             if (other.transform.tag == "Player")
-            {
-                if (_player != null)
-                {
-                    _player.Damage();
-                    _player.AddToScore(_killPoints);
-                    DestroyAnimation();
-                }
+            {                
+                _uiManager.UpdateScore(_killPoints);
+                _canFire = false;
+                DestroyAnimation();
             }
 
             if (other.transform.tag == "Laser")
-            {
-                if (_player != null)
-                {
-                    _player.AddToScore(_killPoints);
-                }
+            {               
+                _uiManager.UpdateScore(_killPoints);
+                _canFire = false;
 
                 Destroy(other.transform.gameObject);
                 DestroyAnimation();
@@ -155,6 +163,7 @@ public class Enemy : MonoBehaviour
         _isDestroyed = true;
         _horizontalSpeed = 0;
         _verticalSpeed = 0;
+        _canFire = false;
 
         _animator.SetTrigger("OnEnemyDeath");
 
@@ -163,7 +172,7 @@ public class Enemy : MonoBehaviour
 
         _audioSource.PlayOneShot(_explosionAudioClip, _explosionVolume);
 
-        Destroy(this.gameObject, animLength);
+        Destroy(gameObject, animLength);
     }
 
 }

@@ -70,6 +70,8 @@
     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
     <Compile Include="Assets\Scripts\Managers\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\Player\Weapons.cs" />
+    <Compile Include="Assets\Scripts\Animations\RotateObject.cs" />
+    <Compile Include="Assets\Scripts\Weapons]\MissileHoming.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

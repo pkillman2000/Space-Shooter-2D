@@ -5,8 +5,6 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour
 {
     [SerializeField]
-    private float _rotationSpeed;
-    [SerializeField]
     private GameObject _explosionPrefab;
 
     private SpawnManager _spawnManager;
@@ -28,15 +26,6 @@ public class Asteroid : MonoBehaviour
     }
 
 
-    void Update()
-    {
-        RotateAsteroid();
-    }
-
-    private void RotateAsteroid()
-    {
-        transform.Rotate(0, 0, _rotationSpeed * Time.deltaTime);
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -46,7 +35,7 @@ public class Asteroid : MonoBehaviour
             Destroy(collision.gameObject);
             _spawnManager.StartSpawning();
             _scrollingBackground.StartScrolling();
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 }

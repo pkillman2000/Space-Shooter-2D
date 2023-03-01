@@ -9,21 +9,31 @@ public class UIManager : MonoBehaviour
 {
     // Score
     [SerializeField]
-    TMP_Text _scoreText;
+    private TMP_Text _scoreText;
     [SerializeField]
-    TMP_Text _gameOverText;
+    private TMP_Text _gameOverText;
+    [SerializeField]
+    private int _score = 0;
 
+    /*
     // Lives
     [SerializeField]
     private Sprite[] _livesSprite;
     [SerializeField]
     private Image _livesImage;
+    */
 
     // Thruster Bar
     [SerializeField]
     private Image _thrusterBar;
     [SerializeField]
     private Gradient _thrusterBarGradient;
+
+    // Ammo Bar
+    [SerializeField]
+    private Image _ammoBar;
+    [SerializeField]
+    private Gradient _ammoBarGradient;
 
     // Restart Level
     [SerializeField]
@@ -33,7 +43,7 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        _scoreText.text = "Score: 0";
+        _scoreText.text = "0";
         _gameOverText.gameObject.SetActive(false);
         _restartMessage.gameObject.SetActive(false);
 
@@ -51,13 +61,16 @@ public class UIManager : MonoBehaviour
 
     public void UpdateScore(int score)
     {
-        _scoreText.text = "Score: " + score.ToString();
+        _score += score;
+        _scoreText.text = _score.ToString();
     }
 
+    /*
     public void UpdateLives(int currentLives) 
     {
         _livesImage.sprite = _livesSprite[currentLives];
     }
+    */
 
     public void GameOver()
     {
@@ -85,6 +98,13 @@ public class UIManager : MonoBehaviour
         _thrusterBar.fillAmount = fuelPercentage;
         // Change Bar Color
         _thrusterBar.color = _thrusterBarGradient.Evaluate(fuelPercentage);
+    }
+
+    public void UpdateAmmoBar(float maxAmmo, float currentAmmo)
+    {
+        float ammoPercentage = currentAmmo / maxAmmo;
+        _ammoBar.fillAmount = ammoPercentage;
+        _ammoBar.color = _ammoBarGradient.Evaluate(ammoPercentage);
     }
 
 }
