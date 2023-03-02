@@ -56,15 +56,15 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Animations\Asteroid.cs" />
+    <Compile Include="Assets\Scripts\Visual Effects\Asteroid.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\MainMenu.cs" />
-    <Compile Include="Assets\Scripts\Animations\ScrollingBackground.cs" />
+    <Compile Include="Assets\Scripts\Visual Effects\ScrollingBackground.cs" />
     <Compile Include="Assets\Scripts\Player\Engines.cs" />
-    <Compile Include="Assets\Scripts\Animations\Explosion.cs" />
+    <Compile Include="Assets\Scripts\Visual Effects\Explosion.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
-    <Compile Include="Assets\Scripts\Animations\RotateObject.cs" />
+    <Compile Include="Assets\Scripts\Visual Effects\RotateObject.cs" />
     <Compile Include="Assets\Scripts\Player\Shields.cs" />
     <Compile Include="Assets\Scripts\PowerUp\PowerUp.cs" />
     <Compile Include="Assets\Scripts\Weapons]\LaserProjectile.cs" />
@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Weapons]\MissileHoming.cs" />
     <Compile Include="Assets\Scripts\Managers\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\Player\Weapons.cs" />
+    <Compile Include="Assets\Scripts\Visual Effects\CameraShake.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

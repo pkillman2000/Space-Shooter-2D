@@ -22,6 +22,7 @@ public class Shields : MonoBehaviour
     private UIManager _uiManager;
     private SpawnManager _spawnManager;
     private ScrollingBackground _scrollingBackground;
+    private CameraShake _cameraShake;
 
 
     void Start()
@@ -48,6 +49,12 @@ public class Shields : MonoBehaviour
         if (_scrollingBackground == null)
         {
             Debug.LogWarning("Scrolling Background is Null!");
+        }
+
+        _cameraShake = GameObject.Find("Camera").GetComponent<CameraShake>();
+        if (_cameraShake == null) 
+        {
+            Debug.LogWarning("CameraShake is Null!");
         }
     }
 
@@ -89,6 +96,7 @@ public class Shields : MonoBehaviour
         {
             ResetAllShields();
             _shieldActive--;
+            _cameraShake.ShakeCamera();
             Debug.Log("Shield Active: " + _shieldActive);
             
             if (_shieldActive >= 0) // Shields still active
@@ -117,6 +125,7 @@ public class Shields : MonoBehaviour
     {
         _lives -= 1;
         DisplayDamage();
+        _cameraShake.ShakeCamera();
     }
 
     private void CureDamage()
