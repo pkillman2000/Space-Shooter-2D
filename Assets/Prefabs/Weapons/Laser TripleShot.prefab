@@ -121,7 +121,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 3}
+  m_Size: {x: 0.29, y: 0.66}
   m_Direction: 0
 --- !u!1 &4983678237183581743
 GameObject:
@@ -294,7 +294,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 3}
+  m_Size: {x: 0.29, y: 0.66}
   m_Direction: 0
 --- !u!1 &7467400882887409624
 GameObject:
@@ -417,5 +417,5 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 3}
+  m_Size: {x: 0.29, y: 0.66}
   m_Direction: 0

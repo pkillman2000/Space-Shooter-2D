@@ -22,6 +22,9 @@ public class PowerUp : MonoBehaviour
     [SerializeField]
     private AudioClip _powerUpAudioClip;
 
+    [SerializeField]
+    private int _spawnWeight;   
+
     private SpriteRenderer _spriteRenderer;
     private Engines _engine;
 
@@ -69,15 +72,19 @@ public class PowerUp : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        /*
+        // Allow player to destroy powerup by accident?
+        if (other.transform.tag == "Laser")
+        {
+            Destroy(other.transform.gameObject);
+            Destroy(this.gameObject);
+        }
+        */
     }
 
-    /*
-    // Allow player to destroy powerup by accident?
-    if (other.transform.tag == "Laser")
+
+    public int GetSpawnWeight()
     {
-        Destroy(other.transform.gameObject);
-        Destroy(this.gameObject);
+        return _spawnWeight;
     }
-    */
-
 }

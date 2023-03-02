@@ -143,8 +143,7 @@ public class Enemy : MonoBehaviour
                 _canFire = false;
                 DestroyAnimation();
             }
-
-            if (other.transform.tag == "Laser")
+            else if ((other.transform.tag == "Laser") || (other.transform.tag == "Missile Homing"))
             {               
                 _uiManager.UpdateScore(_killPoints);
                 _canFire = false;

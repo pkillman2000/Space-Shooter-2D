@@ -728,6 +728,58 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: _maxLaserAmmo
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: _laserFireRate
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: _currentLaserAmmo
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: _tripleShotDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: _tripleShotFireRate
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: _missileHomingPrefab
+      value: 
+      objectReference: {fileID: 9171799277789492029, guid: db603b1a5d841774b829fde7fdba862c, type: 3}
+    - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: _tripleShotAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: de6149a00af1f384085c4cf3bfb9ebcb, type: 3}
+    - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: _missileHomingDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: _missileHomingFireRate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: _tripleShotAudioVolume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: _missileHomingAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 777d4d2ebaba77d40b051d75eb3e7070, type: 3}
+    - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: _missileHomingAudioVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4054016943116599970, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -742,7 +794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4054016943116599974, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.26
+      value: -6.11
       objectReference: {fileID: 0}
     - target: {fileID: 4054016943116599974, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -775,6 +827,10 @@ PrefabInstance:
     - target: {fileID: 4054016943116599974, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127027250548051555, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
@@ -1229,7 +1285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8412581570240338098, guid: 80a2502ab2174b84f8481591af46c030, type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8412581570240338098, guid: 80a2502ab2174b84f8481591af46c030, type: 3}
       propertyPath: m_audioClip
@@ -1860,52 +1916,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _maxEnemySpawnTime
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _minEnemySpawnTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _maxPowerUpSpawnTime
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _minPowerUpSpawnTime
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
       propertyPath: _powerUpPrefab.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _powerUpPrefab.Array.data[0]
+      propertyPath: _powerUpPrefab.Array.data[5]
       value: 
-      objectReference: {fileID: 498132574894468473, guid: 9819fc068ab3acd4099fbe1c48136c85, type: 3}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _powerUpPrefab.Array.data[1]
-      value: 
-      objectReference: {fileID: 498132574894468473, guid: 9819fc068ab3acd4099fbe1c48136c85, type: 3}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _powerUpPrefab.Array.data[2]
-      value: 
-      objectReference: {fileID: 498132574894468473, guid: 9819fc068ab3acd4099fbe1c48136c85, type: 3}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _powerUpPrefab.Array.data[3]
-      value: 
-      objectReference: {fileID: 498132574894468473, guid: 9819fc068ab3acd4099fbe1c48136c85, type: 3}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _powerUpPrefab.Array.data[4]
-      value: 
-      objectReference: {fileID: 498132574894468473, guid: 9819fc068ab3acd4099fbe1c48136c85, type: 3}
+      objectReference: {fileID: 3906640683032365008, guid: 6d5ae8d7b126f6a4ba411c2cbadc7c2e, type: 3}
     - target: {fileID: 6344156372910293430, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
       propertyPath: m_Name
       value: Spawn Manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 6344156372910293430, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}

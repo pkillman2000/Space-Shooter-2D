@@ -47,11 +47,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 1517985575059760296, guid: 2fa11983fad3d5246a23f0977a9bacc8, type: 3}
   _enemyContainer: {fileID: 6344156373469155720}
-  _minEnemySpawnTime: 2
-  _maxEnemySpawnTime: 5
-  _powerUpPrefab: {fileID: 1304289986793055439, guid: 4a32d386a9163474b99bc80ba3b77f90, type: 3}
-  _minPowerUpSpawnTime: 0
-  _maxPowerUpSpawnTime: 0
+  _minEnemySpawnTime: 1
+  _maxEnemySpawnTime: 4
+  _powerUpPrefab:
+  - {fileID: 4395650161220127204, guid: 0a68bd77f82350e4aa8c1fa32a87231b, type: 3}
+  - {fileID: 1071251329898716617, guid: 1dca9302e983e4e459ed1c12abf0d4b1, type: 3}
+  - {fileID: 498132574894468473, guid: 9819fc068ab3acd4099fbe1c48136c85, type: 3}
+  - {fileID: 657186413385065341, guid: 646d4921b72335149a2cd423f4fea8a1, type: 3}
+  - {fileID: 2961385070379241685, guid: 1856e1a7402238d4bb35dc86e47a8dd0, type: 3}
+  _minPowerUpSpawnTime: 4.5
+  _maxPowerUpSpawnTime: 7
   _leftBoundary: -7.5
   _rightBoundary: 7.5
   _spawnHeight: 8

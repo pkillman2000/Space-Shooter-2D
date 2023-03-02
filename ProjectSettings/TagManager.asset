@@ -13,6 +13,8 @@ TagManager:
   - Tripleshot Powerup
   - Fuel Powerup
   - Health Powerup
+  - Missile Homing Powerup
+  - Missile Homing
   layers:
   - Default
   - TransparentFX
