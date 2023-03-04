@@ -5,15 +5,12 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Speed and Movement
-    [SerializeField]
-    private float _horizontalSpeed;
+    [Header("Speed/Movement")]
     [SerializeField] 
     private float _verticalSpeed;
-    private float _horizontalMovement;
     private float _verticalMovement;
 
-    // Boundaries
+    [Header("Boundaries")]
     [SerializeField]
     private float _leftBoundary;
     [SerializeField]
@@ -23,14 +20,7 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private float _destroyHeight;
 
-    [SerializeField]
-    private int _killPoints;
-
-    private Player _player;
-    private Animator _animator;
-    private bool _isDestroyed = false;
-
-    // Audio
+    [Header("Audio")]
     private AudioSource _audioSource;
     [SerializeField]
     private AudioClip _explosionAudioClip;
@@ -43,7 +33,7 @@ public class Enemy : MonoBehaviour
     [Range(0f, 1f)]
     private float _laserVolume;
 
-    // Weapons
+    [Header("Weapons")]
     [SerializeField]
     private GameObject _laserPrefab;
     [SerializeField]
@@ -53,7 +43,16 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private bool _canFire;
 
+    [Header("Misc")]
+    [SerializeField]
+    private int _killPoints;
+    private bool _isDestroyed = false;
+
+    // External Classes
+    private Player _player;
+    private Animator _animator;
     private UIManager _uiManager;
+    private SpawnData _spawnData;
 
     private void Start()
     {
@@ -81,7 +80,20 @@ public class Enemy : MonoBehaviour
             Debug.LogWarning("UI Manager is Null!");
         }
 
+        _spawnData = gameObject.GetComponent<SpawnData>();
+        if(_spawnData == null )
+        {
+            Debug.LogWarning("Spawn Data is Null!");
+        }
+        else
+        {
+            _spawnHeight = _spawnData.GetUpperLeftBoundary().y;
+            _leftBoundary = _spawnData.GetUpperLeftBoundary().x;
+            _rightBoundary = _spawnData.GetLowerRightBoundary().x;
+        }
+
         _canFire = true;
+
         StartCoroutine(FireLasers());
     }
 
@@ -92,9 +104,8 @@ public class Enemy : MonoBehaviour
 
     private void CalculateMovement()
     {
-        _horizontalMovement = _horizontalSpeed * Time.deltaTime;
         _verticalMovement = -_verticalSpeed * Time.deltaTime;
-        transform.Translate(new Vector3(_horizontalMovement, _verticalMovement, 0));
+        transform.Translate(new Vector3(0, _verticalMovement, 0));
 
         if (transform.position.y < _destroyHeight)
         {
@@ -160,7 +171,6 @@ public class Enemy : MonoBehaviour
         float animLength;
 
         _isDestroyed = true;
-        _horizontalSpeed = 0;
         _verticalSpeed = 0;
         _canFire = false;
 

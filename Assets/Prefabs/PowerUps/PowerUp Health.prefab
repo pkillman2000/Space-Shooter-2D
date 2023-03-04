@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 551768790248787180}
   - component: {fileID: 3307835491098224505}
   - component: {fileID: 1112517044223067103}
+  - component: {fileID: -648039238703436678}
   m_Layer: 0
   m_Name: PowerUp Health
   m_TagString: Health Powerup
@@ -239,3 +240,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-648039238703436678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498132574894468473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d915f7906e70f46b942b8021e38c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _upperLeftBoundary: {x: -11.5, y: 9.5}
+  _lowerRightBoundary: {x: 11.5, y: 8.5}
+  _spawnWeight: 15

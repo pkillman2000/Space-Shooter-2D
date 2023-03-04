@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 985062260035757964}
   - component: {fileID: 4704775686378601293}
   - component: {fileID: 2357799659353350825}
+  - component: {fileID: -5793059802165028094}
   m_Layer: 0
   m_Name: 'PowerUp Fuel - New '
   m_TagString: Fuel Powerup
@@ -239,3 +240,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-5793059802165028094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071251329898716617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d915f7906e70f46b942b8021e38c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _upperLeftBoundary: {x: -11.5, y: 9.5}
+  _lowerRightBoundary: {x: 11.5, y: 8.5}
+  _spawnWeight: 10

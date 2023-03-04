@@ -800,17 +800,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4054016943116599970, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4054016943116599974, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4054016943116599974, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.02
+      value: 6.14
       objectReference: {fileID: 0}
     - target: {fileID: 4054016943116599974, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.11
+      value: -1.18
       objectReference: {fileID: 0}
     - target: {fileID: 4054016943116599974, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1301,7 +1305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8412581570240338098, guid: 80a2502ab2174b84f8481591af46c030, type: 3}
       propertyPath: m_Volume
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8412581570240338098, guid: 80a2502ab2174b84f8481591af46c030, type: 3}
       propertyPath: m_audioClip
@@ -1310,6 +1314,10 @@ PrefabInstance:
     - target: {fileID: 8412581570240338100, guid: 80a2502ab2174b84f8481591af46c030, type: 3}
       propertyPath: m_Name
       value: Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412581570240338100, guid: 80a2502ab2174b84f8481591af46c030, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8412581570240338101, guid: 80a2502ab2174b84f8481591af46c030, type: 3}
       propertyPath: m_RootOrder
@@ -1609,6 +1617,10 @@ PrefabInstance:
     - target: {fileID: 2842340432377008637, guid: c61fbebf6e22af74bb1139076e608647, type: 3}
       propertyPath: m_Name
       value: Scrolling Background
+      objectReference: {fileID: 0}
+    - target: {fileID: 2842340432377008637, guid: c61fbebf6e22af74bb1139076e608647, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c61fbebf6e22af74bb1139076e608647, type: 3}
@@ -1932,9 +1944,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
+      propertyPath: _enemyPrefab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
       propertyPath: _powerUpPrefab.Array.size
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
+      propertyPath: _enemyPrefab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1517985575059760296, guid: 2fa11983fad3d5246a23f0977a9bacc8, type: 3}
+    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
+      propertyPath: _enemyPrefab.Array.data[1]
+      value: 
+      objectReference: {fileID: 4445376105900548077, guid: 7b2e9dbaa5b89764683990da0f6f7819, type: 3}
     - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
       propertyPath: _powerUpPrefab.Array.data[5]
       value: 
@@ -1942,6 +1966,10 @@ PrefabInstance:
     - target: {fileID: 6344156372910293430, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
       propertyPath: m_Name
       value: Spawn Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344156372910293430, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}

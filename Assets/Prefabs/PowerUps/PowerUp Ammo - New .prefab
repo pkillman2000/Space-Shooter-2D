@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5618408170957165392}
   - component: {fileID: 1702316734199354367}
   - component: {fileID: -3721288041164776782}
+  - component: {fileID: -5664178035367764282}
   m_Layer: 0
   m_Name: 'PowerUp Ammo - New '
   m_TagString: Ammo Powerup
@@ -239,3 +240,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-5664178035367764282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4395650161220127204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d915f7906e70f46b942b8021e38c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _upperLeftBoundary: {x: -11.5, y: 9.5}
+  _lowerRightBoundary: {x: 11.5, y: 8.5}
+  _spawnWeight: 50

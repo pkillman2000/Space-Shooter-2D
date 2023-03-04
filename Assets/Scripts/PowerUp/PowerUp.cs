@@ -81,10 +81,4 @@ public class PowerUp : MonoBehaviour
         }
         */
     }
-
-
-    public int GetSpawnWeight()
-    {
-        return _spawnWeight;
-    }
 }

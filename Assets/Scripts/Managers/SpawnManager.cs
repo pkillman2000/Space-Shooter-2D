@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
 {
     // Spawn Enemy Info
     [SerializeField]
-    private GameObject _enemyPrefab;
+    private GameObject[] _enemyPrefab;
     [SerializeField]
     private GameObject _enemyContainer;
     [SerializeField]
@@ -24,7 +24,6 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     private float _maxPowerUpSpawnTime;
     private bool _canPowerUpSpawn = true;
-    private int _totalWeight;
 
     // Boundaries
     [SerializeField]
@@ -34,20 +33,45 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     private float _spawnHeight;
 
-    private void Start()
+    // Weighted Random Selection
+    private int WeightedRandomSelection(GameObject[] prefabs)
     {
-        CalculateTotalWeight();
-    }
+        int totalWeight = 0;
+        int activeSum = 0;
+        int randomWeight = 0;
 
-    // Used to add up the total weights for random selection
-    private void CalculateTotalWeight()
-    {
-        for (int i = 0; i < _powerUpPrefab.Length; i++)
+        for (int i = 0; i < prefabs.Length; i++)
         {
-            _totalWeight += _powerUpPrefab[i].GetComponent<PowerUp>().GetSpawnWeight();
+            totalWeight += prefabs[i].GetComponent<SpawnData>().GetSpawnWeight();
         }
+        
+        randomWeight = Random.Range(0, totalWeight + 1);
+
+        for (int i = 0; i < prefabs.Length; ++i)
+        {
+            activeSum += prefabs[i].GetComponent<SpawnData>().GetSpawnWeight();
+            if (activeSum > randomWeight)
+            {
+                return i;
+            }
+        }
+        return 0;
     }
 
+
+    public void StartSpawning()
+    {
+        StartCoroutine(SpawnEnemyRoutine());
+        StartCoroutine(SpawnPowerUpRoutine());
+    }
+
+    public void StopSpawning()
+    {
+        _canEnemySpawn = false;
+        _canPowerUpSpawn = false;
+    }
+
+    // Spawn Enemies
     IEnumerator SpawnEnemyRoutine()
     {
         float currentSpawnTime;
@@ -62,15 +86,32 @@ public class SpawnManager : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        float spawnXPosition;
         GameObject newEnemy;
-        spawnXPosition = Random.Range(_leftBoundary, _rightBoundary);
+        float spawnXPosition;
+        float spawnYPosition;
+        int randomEnemy;
+        float leftBoundary;
+        float rightBoundary;
+        float upperBoundary;
+        float lowerBoundary;
+
+        randomEnemy = WeightedRandomSelection(_enemyPrefab);
+
+        leftBoundary = _enemyPrefab[randomEnemy].GetComponent<SpawnData>().GetUpperLeftBoundary().x;
+        rightBoundary = _enemyPrefab[randomEnemy].GetComponent<SpawnData>().GetLowerRightBoundary().x;
+        upperBoundary = _enemyPrefab[randomEnemy].GetComponent<SpawnData>().GetUpperLeftBoundary().y;
+        lowerBoundary = _enemyPrefab[randomEnemy].GetComponent<SpawnData>().GetLowerRightBoundary().y;
+
+        spawnXPosition = Random.Range(leftBoundary, rightBoundary);
+        spawnYPosition = Random.Range(lowerBoundary, upperBoundary);
+
         // Create reference to enemy that is instantiated, and then move it to the Enemy Container.  
         // This just makes the Hierarchy window cleaner.  It does not add any functionality to the game.
-        newEnemy = Instantiate(_enemyPrefab, new Vector3(spawnXPosition, _spawnHeight, 0), Quaternion.identity);
+        newEnemy = Instantiate(_enemyPrefab[randomEnemy], new Vector3(spawnXPosition, spawnYPosition, 0), Quaternion.identity);
         newEnemy.transform.parent = _enemyContainer.transform;
     }
 
+    // Spawn Powerups
     IEnumerator SpawnPowerUpRoutine()
     {
         float currentSpawnTime;
@@ -86,38 +127,23 @@ public class SpawnManager : MonoBehaviour
     private void SpawnPowerUp()
     {
         float spawnXPosition;
+        float spawnYPosition;
         int randomPowerUp;
+        float leftBoundary;
+        float rightBoundary;
+        float upperBoundary;
+        float lowerBoundary;
+        
+        randomPowerUp = WeightedRandomSelection(_powerUpPrefab);
 
-        spawnXPosition = Random.Range(_leftBoundary, _rightBoundary);
-        randomPowerUp = RandomWeightedPowerup();
-        Instantiate(_powerUpPrefab[randomPowerUp], new Vector3(spawnXPosition, _spawnHeight, 0), Quaternion.identity);
-    }
+        leftBoundary = _powerUpPrefab[randomPowerUp].GetComponent<SpawnData>().GetUpperLeftBoundary().x;
+        rightBoundary = _powerUpPrefab[randomPowerUp].GetComponent<SpawnData>().GetLowerRightBoundary().x;
+        upperBoundary = _powerUpPrefab[randomPowerUp].GetComponent<SpawnData>().GetUpperLeftBoundary().y;
+        lowerBoundary = _powerUpPrefab[randomPowerUp].GetComponent<SpawnData>().GetLowerRightBoundary().y;
 
-    private int RandomWeightedPowerup()
-    {
-        int activeSum = 0;
-        int randomWeight = Random.Range(0, _totalWeight + 1);
+        spawnXPosition = Random.Range(leftBoundary, rightBoundary);
+        spawnYPosition = Random.Range(lowerBoundary, upperBoundary);
 
-        for(int i = 0; i < _powerUpPrefab.Length; ++i)
-        {
-            activeSum += _powerUpPrefab[i].GetComponent<PowerUp>().GetSpawnWeight();
-            if(activeSum > randomWeight) 
-            {
-                return i;
-            }
-        }
-        return 0;
-    }
-
-    public void StartSpawning()
-    {
-        StartCoroutine(SpawnEnemyRoutine());
-        StartCoroutine(SpawnPowerUpRoutine());
-    }
-
-    public void StopSpawning()
-    {
-        _canEnemySpawn= false;
-        _canPowerUpSpawn= false;
+        Instantiate(_powerUpPrefab[randomPowerUp], new Vector3(spawnXPosition, spawnYPosition, 0), Quaternion.identity);
     }
 }
