@@ -24,7 +24,7 @@ public class LaserProjectile : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
-        else
+        else // Enemy laser - bolt goes down, destructs at bottom of screen
         {
             transform.Translate(Vector3.down * _laserSpeed * Time.deltaTime);
 
@@ -33,5 +33,10 @@ public class LaserProjectile : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
+    }
+
+    public void SetLaserSpeed(float speed)
+    {
+        _laserSpeed = speed;
     }
 }

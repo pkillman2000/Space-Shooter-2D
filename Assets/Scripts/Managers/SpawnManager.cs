@@ -14,7 +14,19 @@ public class SpawnManager : MonoBehaviour
     private float _minEnemySpawnTime;
     [SerializeField]
     private float _maxEnemySpawnTime;
+    [SerializeField]
+    private float _laserSpeed;
+    [SerializeField]
+    private float _enemySpeed;
+    [SerializeField]
+    private float _minEnemyFireRate;
+    [SerializeField]
+    private float _maxEnemyFireRate;
+
     private bool _canEnemySpawn = true;
+    private int _enemyFighterWeight;
+    private int _enemyBomberWeight;
+
 
     // Spawn PowerUps Info
     [SerializeField]
@@ -40,11 +52,21 @@ public class SpawnManager : MonoBehaviour
         int activeSum = 0;
         int randomWeight = 0;
 
+        // Get total weight of various spawnable enemies
         for (int i = 0; i < prefabs.Length; i++)
         {
+            if(prefabs[i].gameObject.name == "Enemy Fighter")
+            {
+                prefabs[i].GetComponent<SpawnData>().SetSpawnWeight(_enemyFighterWeight);
+            }
+            else
+            {
+                prefabs[i].GetComponent<SpawnData>().SetSpawnWeight(_enemyBomberWeight);
+            }            
             totalWeight += prefabs[i].GetComponent<SpawnData>().GetSpawnWeight();
+
         }
-        
+        // Select random enemy based on weight
         randomWeight = Random.Range(0, totalWeight + 1);
 
         for (int i = 0; i < prefabs.Length; ++i)
@@ -58,9 +80,11 @@ public class SpawnManager : MonoBehaviour
         return 0;
     }
 
-
     public void StartSpawning()
     {
+        _canEnemySpawn = true;
+        _canPowerUpSpawn = true;
+
         StartCoroutine(SpawnEnemyRoutine());
         StartCoroutine(SpawnPowerUpRoutine());
     }
@@ -109,8 +133,43 @@ public class SpawnManager : MonoBehaviour
         // This just makes the Hierarchy window cleaner.  It does not add any functionality to the game.
         newEnemy = Instantiate(_enemyPrefab[randomEnemy], new Vector3(spawnXPosition, spawnYPosition, 0), Quaternion.identity);
         newEnemy.transform.parent = _enemyContainer.transform;
+        if(newEnemy.gameObject.name == "Enemy Fighter(Clone)")
+        {
+            newEnemy.GetComponent<Enemy>().SetLaserSpeed(_laserSpeed);
+            newEnemy.GetComponent<Enemy>().SetMovementSpeed(_enemySpeed);
+            newEnemy.GetComponent<Enemy>().SetFireRates(_minEnemyFireRate, _maxEnemyFireRate);
+        }
     }
 
+    // Change enemy stats for waves
+
+    public void SetEnemySpawnTimes(float min, float max)
+    {
+        _minEnemySpawnTime = min;
+        _maxEnemySpawnTime = max;
+    }
+
+    public void UpdateEnemyWeights(int fighterWeight, int bomberWeight)
+    {
+        _enemyFighterWeight = fighterWeight;
+        _enemyBomberWeight = bomberWeight;
+    }
+
+    public void SetLaserSpeed(float speed)
+    {
+        _laserSpeed = speed;
+    }
+
+    public void SetEnemySpeed(float speed)
+    {
+        _enemySpeed = speed;
+    }
+
+    public void SetEnemyFireRates(float min, float max)
+    {
+        _minEnemyFireRate = min;
+        _maxEnemyFireRate = max;
+    }
     // Spawn Powerups
     IEnumerator SpawnPowerUpRoutine()
     {

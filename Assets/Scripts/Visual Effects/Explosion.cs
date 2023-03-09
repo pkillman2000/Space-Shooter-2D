@@ -24,7 +24,6 @@ public class Explosion : MonoBehaviour
 
         clipInfo = _animator.runtimeAnimatorController.animationClips;
         animLength = clipInfo[0].length;
-        Debug.Log("Explosion Length: " + animLength);
 
         Destroy(gameObject, animLength);
     }

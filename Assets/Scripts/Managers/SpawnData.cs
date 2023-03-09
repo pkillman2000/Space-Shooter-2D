@@ -19,6 +19,11 @@ public class SpawnData : MonoBehaviour
         return _spawnWeight;
     }
 
+    public void SetSpawnWeight(int weight)
+    {
+        _spawnWeight = weight;
+    }
+
     public Vector2 GetUpperLeftBoundary()
     {
         return _upperLeftBoundary;

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    // Score
+    [Header("Score")]
     [SerializeField]
     private TMP_Text _scoreText;
     [SerializeField]
@@ -15,34 +15,65 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private int _score = 0;
 
-    /*
-    // Lives
-    [SerializeField]
-    private Sprite[] _livesSprite;
-    [SerializeField]
-    private Image _livesImage;
-    */
-
-    // Thruster Bar
+    [Header("Thruster Bar")]
     [SerializeField]
     private Image _thrusterBar;
     [SerializeField]
     private Gradient _thrusterBarGradient;
 
-    // Ammo Bar
+    [Header("Ammo Bar")]
     [SerializeField]
     private Image _ammoBar;
     [SerializeField]
     private Gradient _ammoBarGradient;
 
-    // Restart Level
+    [Header("Game Over")]
     [SerializeField]
-    TMP_Text _restartMessage;
+    private TMP_Text _restartMessage;
     [SerializeField]
     private bool _gameOverFlag = false;
+    [SerializeField]
+    private TMP_Text _youWonText;
+    [SerializeField]
+    private TMP_Text _youLostText;
+
+    [Header("Wave Start")]
+    [SerializeField]
+    private TMP_Text _waveNumberText;
+    [SerializeField]
+    private TMP_Text _waveCountdownText;
+
+    [Header("Wave End")]
+    [SerializeField]
+    private TMP_Text _waveCompleteText;
+    [SerializeField]
+    private TMP_Text _waveCompleteStatsText;
+
+    private SpawnManager _spawnManager;
+    private ScrollingBackground _scrollingBackground;
+    private WaveManager _waveManager;
+
 
     private void Start()
     {
+        _spawnManager = GameObject.Find("Spawn Manager").GetComponent<SpawnManager>();
+        if (_spawnManager == null)
+        {
+            Debug.LogWarning("Spawn Manager is Null!");
+        }
+
+        _scrollingBackground = GameObject.Find("Scrolling Background").GetComponent<ScrollingBackground>();
+        if (_scrollingBackground == null)
+        {
+            Debug.LogWarning("Scrolling Background is Null!");
+        }
+
+        _waveManager = GameObject.Find("Wave Manager").GetComponent <WaveManager>();
+        if(_waveManager == null)
+        {
+            Debug.LogWarning("Wave Manager is Null");
+        }
+
         _scoreText.text = "0";
         _gameOverText.gameObject.SetActive(false);
         _restartMessage.gameObject.SetActive(false);
@@ -65,17 +96,23 @@ public class UIManager : MonoBehaviour
         _scoreText.text = _score.ToString();
     }
 
-    /*
-    public void UpdateLives(int currentLives) 
+    public void GameOver(bool didWin)
     {
-        _livesImage.sprite = _livesSprite[currentLives];
-    }
-    */
+        _waveCompleteText.gameObject.SetActive(false);
+        _waveCompleteStatsText.gameObject.SetActive(false);
 
-    public void GameOver()
-    {
         _gameOverText.gameObject.SetActive(true);
         _restartMessage.gameObject.SetActive(true);
+
+        if( didWin ) 
+        {
+            _youWonText.gameObject.SetActive(true);
+        }
+        else
+        {
+            _youLostText.gameObject.SetActive(true);
+        }
+
         _gameOverFlag = true;
         StartCoroutine(FlickerGameOver());
     }
@@ -107,4 +144,43 @@ public class UIManager : MonoBehaviour
         _ammoBar.color = _ammoBarGradient.Evaluate(ammoPercentage);
     }
 
+    // Wave Start
+    public void StartNewWave(int waveNumber)
+    {
+        _waveCompleteText.gameObject.SetActive(false);
+        _waveCompleteStatsText.gameObject.SetActive(false);
+
+        _waveNumberText.text = "Wave " + waveNumber.ToString();
+        _waveNumberText.gameObject.SetActive(true);
+
+        StartCoroutine(NewWaveCountdown());
+    }
+
+    private IEnumerator NewWaveCountdown()
+    {
+        int countdown = 3;
+
+        while (countdown > 0) 
+        { 
+            _waveCountdownText.text = countdown.ToString();
+            _waveCountdownText.gameObject.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            countdown--;
+        }
+
+        _waveNumberText.gameObject.SetActive(false);
+        _waveCountdownText.gameObject.SetActive(false);
+        _waveManager.StartNewWave();        
+    }
+
+    // Wave End
+    public void EndCurrentWave(int currentLevel, int total, int destroyed)
+    {
+        
+        _waveCompleteText.gameObject.SetActive(true);
+        _waveCompleteText.text = "Wave " + currentLevel.ToString() +" Complete";
+
+        _waveCompleteStatsText.text = "Destroyed: " + destroyed.ToString() + "/" + total.ToString();
+        _waveCompleteStatsText.gameObject.SetActive(true);
+    }
 }

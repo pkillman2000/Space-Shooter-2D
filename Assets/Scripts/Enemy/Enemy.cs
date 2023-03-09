@@ -42,6 +42,8 @@ public class Enemy : MonoBehaviour
     private float _maxLaserFireTime;
     [SerializeField]
     private bool _canFire;
+    [SerializeField]
+    private float _laserSpeed;
 
     [Header("Misc")]
     [SerializeField]
@@ -128,7 +130,9 @@ public class Enemy : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(_minLaserFireTime, _maxLaserFireTime));
             if(_canFire)
             {
-                Instantiate(_laserPrefab, this.transform.position, Quaternion.identity);
+                
+                GameObject laser = Instantiate(_laserPrefab, this.transform.position, Quaternion.identity);
+                laser.GetComponent<LaserProjectile>().SetLaserSpeed(_laserSpeed);
                 _audioSource.PlayOneShot(_laserAudioClip, _laserVolume);
             }
         }
@@ -184,4 +188,21 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject, animLength);
     }
 
+    // Wave Modifiers
+    public void SetLaserSpeed(float speed)
+    {
+        _laserSpeed = speed;
+    }
+
+    public void SetMovementSpeed(float speed) 
+    {
+        _verticalSpeed = speed;
+    }
+
+    public void SetFireRates(float min, float max)
+    {
+        Debug.Log("Enemy - Min/Max: " + min + "/" + max);
+        _minLaserFireTime = min;
+        _maxLaserFireTime = max;
+    }
 }

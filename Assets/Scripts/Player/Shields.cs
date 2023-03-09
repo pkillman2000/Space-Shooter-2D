@@ -159,7 +159,7 @@ public class Shields : MonoBehaviour
         {
             _spawnManager.StopSpawning();
             _scrollingBackground.StopScrolling();
-            _uiManager.GameOver();
+            _uiManager.GameOver(false);
 
             Instantiate(_damagePrefabs[2], transform.position, Quaternion.identity);
             Destroy(gameObject);

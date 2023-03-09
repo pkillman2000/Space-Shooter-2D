@@ -152,11 +152,4 @@ public class EnemyDiveBomber : MonoBehaviour
         Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
-
-    /* TO-DO
-     * Movement **
-     * Firing **
-     * Damage - Update UI
-     * Self-Destruct
-     */
 }

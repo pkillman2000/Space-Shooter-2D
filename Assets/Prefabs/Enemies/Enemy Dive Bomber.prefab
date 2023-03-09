@@ -264,4 +264,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _upperLeftBoundary: {x: 12, y: 1}
   _lowerRightBoundary: {x: 13, y: -1}
-  _spawnWeight: 200
+  _spawnWeight: 10
