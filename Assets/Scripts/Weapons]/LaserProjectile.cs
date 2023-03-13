@@ -12,6 +12,22 @@ public class LaserProjectile : MonoBehaviour
     [SerializeField]
     private bool _enemyLaser;
 
+    private WaveManager _waveManager;
+
+    private void Start()
+    {
+        _waveManager = GameObject.Find("Wave Manager").GetComponent<WaveManager>();
+        if (_waveManager == null)
+        {
+            Debug.LogWarning("Wave Manager is Null!");
+        }
+
+        if(_enemyLaser) 
+        {
+            _laserSpeed = _waveManager.GetEnemyLaserSpeed();
+        }
+    }
+
     void Update()
     {
         if(!_enemyLaser) // Player laser - bolt goes up, destructs at top of screen

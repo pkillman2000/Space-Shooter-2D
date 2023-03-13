@@ -12,11 +12,16 @@ public class EnemyDiveBomber : MonoBehaviour
 
     [Header("Path")]
     [SerializeField]
-    private GameObject[] _paths;
+    private GameObject[] _easyPaths;
+    [SerializeField]
+    private GameObject[] _averagePaths;
+    [SerializeField]
+    private GameObject[] _difficultPaths;
     [SerializeField]
     private GameObject[] _waypoints;
     private int _currentPathID = 0;
     private int _currentWaypointID = 0;
+    private GameObject[] _paths;
 
     [Header("Audio")]
     [SerializeField]
@@ -47,6 +52,7 @@ public class EnemyDiveBomber : MonoBehaviour
     // External Classes
     private Player _player;
     private UIManager _uiManager;
+    private WaveManager _waveManager;
 
     void Start()
     {
@@ -68,6 +74,12 @@ public class EnemyDiveBomber : MonoBehaviour
             Debug.LogWarning("UI Manager is Null!");
         }
 
+        _waveManager = GameObject.Find("Wave Manager").GetComponent<WaveManager>();
+        if (_waveManager == null)
+        {
+            Debug.LogWarning("Wave Manager is Null!");
+        }
+
         SelectPath();
 
         _canFire = true;
@@ -83,6 +95,21 @@ public class EnemyDiveBomber : MonoBehaviour
 
     private void SelectPath()
     {        
+        // Select proper paths based on wave difficulty level
+        if(_waveManager.GetWaveDifficulty() == "Easy")
+        {
+            _paths = _easyPaths;
+        }
+        else if (_waveManager.GetWaveDifficulty() == "Average")
+        {
+            _paths = _averagePaths;
+        }
+        else // Difficult
+        {
+            _paths = _difficultPaths;
+        }
+
+        // Select path
         _currentPathID =  Random.Range(0, _paths.Length);
         _waypoints = _paths[_currentPathID].GetComponent<PathData>().GetWayPoints();
     }

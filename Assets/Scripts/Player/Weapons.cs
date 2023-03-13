@@ -131,7 +131,7 @@ public class Weapons : MonoBehaviour
     }
 
     // Laser
-    private void ReloadAmmo()
+    public void ReloadAmmo()
     {
         _currentLaserAmmo = _maxLaserAmmo;
         _uiManager.UpdateAmmoBar(_maxLaserAmmo, _currentLaserAmmo);

@@ -180,7 +180,9 @@ public class UIManager : MonoBehaviour
         _waveCompleteText.gameObject.SetActive(true);
         _waveCompleteText.text = "Wave " + currentLevel.ToString() +" Complete";
 
-        _waveCompleteStatsText.text = "Destroyed: " + destroyed.ToString() + "/" + total.ToString();
-        _waveCompleteStatsText.gameObject.SetActive(true);
+        // This displays total enemy spawned and total enemy destroyed.  It may be
+        // an added feature later.
+        // _waveCompleteStatsText.text = "Destroyed: " + destroyed.ToString() + "/" + total.ToString();
+        // _waveCompleteStatsText.gameObject.SetActive(true);
     }
 }

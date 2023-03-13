@@ -120,7 +120,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -236,6 +236,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _forwardSpeed: 5
   _rotationSpeed: 60
+  _easyPaths:
+  - {fileID: 744844921438280236, guid: c26efa17cabba6c46b160eb7e9e6a23a, type: 3}
+  - {fileID: 4408912383073409082, guid: 9b3b4391149d6a740ba6f6e908a2746d, type: 3}
+  _averagePaths:
+  - {fileID: 2285920601186213174, guid: 3059c566317dba94785fd57a83325859, type: 3}
+  - {fileID: 250622489892865412, guid: 56b034e2c3b8fac46affcceab70f4f96, type: 3}
+  _difficultPaths:
+  - {fileID: 2214200210488950089, guid: ff2ff4aef10c0a24b815eb2041b31b89, type: 3}
+  - {fileID: 1869479104910619154, guid: 02de05665fb6286488d1f641bd46853c, type: 3}
   _paths:
   - {fileID: 3169808889789582205, guid: c26efa17cabba6c46b160eb7e9e6a23a, type: 3}
   - {fileID: 3559578324778559154, guid: 9b3b4391149d6a740ba6f6e908a2746d, type: 3}

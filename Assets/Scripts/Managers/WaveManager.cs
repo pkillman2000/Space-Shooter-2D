@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -10,11 +11,17 @@ public class WaveManager : MonoBehaviour
     [SerializeField]
     private float _waveLength;
     [SerializeField]
-    private int _currentWaveID = 0;
+    private int _currentWaveID;
     [SerializeField]
     private float _pauseBetweenWaves;
     [SerializeField]
     private int _maxNumberOfWaves;
+    [SerializeField]
+    private int _easyWaveDifficulty;
+    [SerializeField]
+    private int _averageWaveDifficulty;
+    [SerializeField]
+    private string _currentWaveDifficulty;
 
     [Header("Enemy Spawn Info")]
     [SerializeField]
@@ -30,16 +37,22 @@ public class WaveManager : MonoBehaviour
     [SerializeField]
     private float[] _enemyLaserSpeed;
     [SerializeField]
-    private float[] _enemySpeed;
+    private float[] _enemyFighterSpeed;
     [SerializeField]
-    private float[] _minEnemyFireRate;
+    private float[] _minEnemyFighterFireRate;
     [SerializeField]
-    private float[] _maxEnemyFireRate;
+    private float[] _maxEnemyFighterFireRate;
 
+    [Header("Spawn Info")]
+    [SerializeField]
+    private float[] _minSpawnTime;
+    [SerializeField]
+    private float[] _maxSpawnTime;
 
     private SpawnManager _spawnManager;
     private ScrollingBackground _scrollingBackground;
     private UIManager _uiManager;
+    private Weapons _weapons;
 
     void Start()
     {
@@ -61,6 +74,12 @@ public class WaveManager : MonoBehaviour
             Debug.LogWarning("UI Manager is Null!");
         }
 
+        _weapons = GameObject.Find("Player").GetComponent<Weapons>();
+        if (_weapons == null) 
+        {
+            Debug.LogWarning("Weapons is Null!");
+        }
+
         StartCoroutine(PauseBetweenWavesRoutine());
     }
 
@@ -68,18 +87,28 @@ public class WaveManager : MonoBehaviour
     {
         _spawnManager.StartSpawning();
         _scrollingBackground.StartScrolling();
-
-        // Increase Difficulties
-        if (_currentWaveID < _maxNumberOfWaves)
-        {
-            UpdateEnemySpawnTimes();
-            UpdateEnemyRandomSelectionWeights();
-            UpdateEnemyLaserSpeed();
-            UpdateEnemySpeed();
-            UpdateEnemyFireRate();
-        }
+        _weapons.ReloadAmmo();
 
         StartCoroutine(WaveTimerRoutine());
+    }
+
+    private void CalculateWaveDifficulties()
+    {
+        _easyWaveDifficulty = (int)Math.Round(_maxNumberOfWaves / 3f);
+        _averageWaveDifficulty = (int)Math.Round(_maxNumberOfWaves / 1.5f);
+
+        if (_currentWaveID <= _easyWaveDifficulty)
+        {
+            _currentWaveDifficulty = "Easy";
+        }
+        else if (_currentWaveID <= _averageWaveDifficulty)
+        {
+            _currentWaveDifficulty = "Average";
+        }
+        else
+        {
+            _currentWaveDifficulty = "Difficult";
+        }
     }
 
     private IEnumerator WaveTimerRoutine()
@@ -125,9 +154,12 @@ public class WaveManager : MonoBehaviour
     private IEnumerator PauseBetweenWavesRoutine()
     {
         yield return new WaitForSeconds(_pauseBetweenWaves);
-        if(_currentWaveID < _maxNumberOfWaves)
+        
+        _currentWaveID++;
+        CalculateWaveDifficulties();
+
+        if (_currentWaveID <= _maxNumberOfWaves)
         {
-            _currentWaveID++;
             _uiManager.StartNewWave(_currentWaveID);
         }
         else
@@ -137,29 +169,58 @@ public class WaveManager : MonoBehaviour
         }
     }
 
-    // Update Difficulties
-    private void UpdateEnemySpawnTimes()
+    public float GetMinimumEnemySpawnRate()
     {
-        _spawnManager.SetEnemySpawnTimes(_minEnemySpawnTime[_currentWaveID], _maxEnemySpawnTime[_currentWaveID]);
+        return _minEnemySpawnTime[_currentWaveID - 1];
     }
 
-    private void UpdateEnemyRandomSelectionWeights()
+    public float GetMaximumEnemySpawnRate() 
     {
-        _spawnManager.UpdateEnemyWeights(_enemyFighterWeight[_currentWaveID], _enemyBomberWeight[_currentWaveID]);
+        return (_maxEnemySpawnTime[_currentWaveID - 1]);
     }
 
-    private void UpdateEnemyLaserSpeed()
+    public int GetEnemyFighterWeight()
     {
-        _spawnManager.SetLaserSpeed(_enemyLaserSpeed[_currentWaveID]);
+        return _enemyFighterWeight[_currentWaveID - 1];
     }
 
-    private void UpdateEnemySpeed()
+    public int GetEnemyBomberWeight()
     {
-        _spawnManager.SetEnemySpeed(_enemySpeed[_currentWaveID]);
+        return _enemyBomberWeight[_currentWaveID - 1];
     }
 
-    private void UpdateEnemyFireRate()
+    public float GetEnemyFighterMovementSpeed()
     {
-        _spawnManager.SetEnemyFireRates(_minEnemyFireRate[_currentWaveID], _maxEnemyFireRate[_currentWaveID]);
+        return _enemyFighterSpeed[_currentWaveID - 1];
+    }
+
+    public float GetEnemyLaserSpeed()
+    {
+        return _enemyLaserSpeed[_currentWaveID - 1];
+    }
+
+    public float GetMinEnemyFighterFireRate()
+    {
+        return _minEnemyFighterFireRate[_currentWaveID - 1];
+    }
+
+    public float GetMaxEnemyFighterFireRate()
+    {
+        return _maxEnemyFighterFireRate[_currentWaveID - 1];
+    }
+
+    public string GetWaveDifficulty()
+    {
+        return _currentWaveDifficulty;
+    }
+
+    public float GetMinSpawnTime()
+    {
+        return _minSpawnTime[_currentWaveID - 1];
+    }
+
+    public float GetMaxSpawnTime() 
+    {
+        return _maxSpawnTime[_currentWaveID - 1];
     }
 }

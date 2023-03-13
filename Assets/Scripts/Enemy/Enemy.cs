@@ -6,16 +6,11 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [Header("Speed/Movement")]
-    [SerializeField] 
     private float _verticalSpeed;
     private float _verticalMovement;
 
-    [Header("Boundaries")]
-    [SerializeField]
     private float _leftBoundary;
-    [SerializeField]
     private float _rightBoundary;
-    [SerializeField]
     private float _spawnHeight;
     [SerializeField]
     private float _destroyHeight;
@@ -36,13 +31,10 @@ public class Enemy : MonoBehaviour
     [Header("Weapons")]
     [SerializeField]
     private GameObject _laserPrefab;
-    [SerializeField]
     private float _minLaserFireTime;
-    [SerializeField]
     private float _maxLaserFireTime;
     [SerializeField]
     private bool _canFire;
-    [SerializeField]
     private float _laserSpeed;
 
     [Header("Misc")]
@@ -55,6 +47,7 @@ public class Enemy : MonoBehaviour
     private Animator _animator;
     private UIManager _uiManager;
     private SpawnData _spawnData;
+    private WaveManager _waveManager;
 
     private void Start()
     {
@@ -94,7 +87,16 @@ public class Enemy : MonoBehaviour
             _rightBoundary = _spawnData.GetLowerRightBoundary().x;
         }
 
+        _waveManager = GameObject.Find("Wave Manager").GetComponent<WaveManager>();
+        if (_waveManager == null)
+        {
+            Debug.LogWarning("Wave Manager is Null!");
+        }
+
         _canFire = true;
+        _minLaserFireTime = _waveManager.GetMinEnemyFighterFireRate();
+        _maxLaserFireTime = _waveManager.GetMaxEnemyFighterFireRate();
+        _verticalSpeed = _waveManager.GetEnemyFighterMovementSpeed();
 
         StartCoroutine(FireLasers());
     }

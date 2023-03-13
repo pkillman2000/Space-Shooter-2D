@@ -10,40 +10,34 @@ public class SpawnManager : MonoBehaviour
     private GameObject[] _enemyPrefab;
     [SerializeField]
     private GameObject _enemyContainer;
-    [SerializeField]
     private float _minEnemySpawnTime;
-    [SerializeField]
     private float _maxEnemySpawnTime;
-    [SerializeField]
-    private float _laserSpeed;
-    [SerializeField]
-    private float _enemySpeed;
-    [SerializeField]
-    private float _minEnemyFireRate;
-    [SerializeField]
-    private float _maxEnemyFireRate;
+    //private float _laserSpeed;
+    //private float _enemyFighterSpeed;
+    private float _minEnemyFighterFireRate;
+    private float _maxEnemyFighterFireRate;
 
     private bool _canEnemySpawn = true;
     private int _enemyFighterWeight;
     private int _enemyBomberWeight;
 
-
     // Spawn PowerUps Info
     [SerializeField]
     private GameObject[] _powerUpPrefab;
-    [SerializeField]
     private float _minPowerUpSpawnTime;
-    [SerializeField]
     private float _maxPowerUpSpawnTime;
     private bool _canPowerUpSpawn = true;
 
-    // Boundaries
-    [SerializeField]
-    private float _leftBoundary;
-    [SerializeField]
-    private float _rightBoundary;
-    [SerializeField]
-    private float _spawnHeight;
+    private WaveManager _waveManager;
+
+    private void Start()
+    {
+        _waveManager = GameObject.Find("Wave Manager").GetComponent<WaveManager>();
+        if(_waveManager == null ) 
+        {
+            Debug.LogWarning("Wave Manager is Null!");
+        }
+    }
 
     // Weighted Random Selection
     private int WeightedRandomSelection(GameObject[] prefabs)
@@ -51,6 +45,10 @@ public class SpawnManager : MonoBehaviour
         int totalWeight = 0;
         int activeSum = 0;
         int randomWeight = 0;
+
+        _enemyFighterWeight = _waveManager.GetEnemyFighterWeight();
+        _enemyBomberWeight = _waveManager.GetEnemyBomberWeight();
+
 
         // Get total weight of various spawnable enemies
         for (int i = 0; i < prefabs.Length; i++)
@@ -102,6 +100,9 @@ public class SpawnManager : MonoBehaviour
 
         while (_canEnemySpawn) 
         {
+            _minEnemySpawnTime = _waveManager.GetMinimumEnemySpawnRate();
+            _maxEnemySpawnTime = _waveManager.GetMaximumEnemySpawnRate();
+
             SpawnEnemy();
             currentSpawnTime = Random.Range(_minEnemySpawnTime, _maxEnemySpawnTime);
             yield return new WaitForSeconds(currentSpawnTime);
@@ -133,47 +134,15 @@ public class SpawnManager : MonoBehaviour
         // This just makes the Hierarchy window cleaner.  It does not add any functionality to the game.
         newEnemy = Instantiate(_enemyPrefab[randomEnemy], new Vector3(spawnXPosition, spawnYPosition, 0), Quaternion.identity);
         newEnemy.transform.parent = _enemyContainer.transform;
-        if(newEnemy.gameObject.name == "Enemy Fighter(Clone)")
-        {
-            newEnemy.GetComponent<Enemy>().SetLaserSpeed(_laserSpeed);
-            newEnemy.GetComponent<Enemy>().SetMovementSpeed(_enemySpeed);
-            newEnemy.GetComponent<Enemy>().SetFireRates(_minEnemyFireRate, _maxEnemyFireRate);
-        }
     }
 
-    // Change enemy stats for waves
 
-    public void SetEnemySpawnTimes(float min, float max)
-    {
-        _minEnemySpawnTime = min;
-        _maxEnemySpawnTime = max;
-    }
-
-    public void UpdateEnemyWeights(int fighterWeight, int bomberWeight)
-    {
-        _enemyFighterWeight = fighterWeight;
-        _enemyBomberWeight = bomberWeight;
-    }
-
-    public void SetLaserSpeed(float speed)
-    {
-        _laserSpeed = speed;
-    }
-
-    public void SetEnemySpeed(float speed)
-    {
-        _enemySpeed = speed;
-    }
-
-    public void SetEnemyFireRates(float min, float max)
-    {
-        _minEnemyFireRate = min;
-        _maxEnemyFireRate = max;
-    }
     // Spawn Powerups
     IEnumerator SpawnPowerUpRoutine()
     {
         float currentSpawnTime;
+        _minPowerUpSpawnTime = _waveManager.GetMinSpawnTime();
+        _maxPowerUpSpawnTime += _waveManager.GetMaxSpawnTime();
 
         while (_canPowerUpSpawn)
         {
