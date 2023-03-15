@@ -32,6 +32,8 @@ public class WaveManager : MonoBehaviour
     private int[] _enemyFighterWeight;
     [SerializeField]
     private int[] _enemyBomberWeight;
+    [SerializeField]
+    private int[] _enemyRammerWeight;
 
     [Header("Enemy Info")]
     [SerializeField]
@@ -189,6 +191,11 @@ public class WaveManager : MonoBehaviour
         return _enemyBomberWeight[_currentWaveID - 1];
     }
 
+    public int GetEnemyRammerWeight()
+    {
+        return _enemyRammerWeight[_currentWaveID - 1];
+    }
+
     public float GetEnemyFighterMovementSpeed()
     {
         return _enemyFighterSpeed[_currentWaveID - 1];
@@ -222,5 +229,10 @@ public class WaveManager : MonoBehaviour
     public float GetMaxSpawnTime() 
     {
         return _maxSpawnTime[_currentWaveID - 1];
+    }
+
+    public int GetCurrentWaveLevel()
+    {
+        return _currentWaveID;
     }
 }

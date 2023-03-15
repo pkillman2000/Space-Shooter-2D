@@ -140,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _horizontalSpeed: 0
   _verticalSpeed: 3
-  _destroyHeight: -5.8
+  _destroyHeight: -8
   _powerUpAudioVolume: 0.5
   _powerUpAudioClip: {fileID: 8300000, guid: 5ee343246919d2b4bba63ae629e95494, type: 3}
   _spawnWeight: 90

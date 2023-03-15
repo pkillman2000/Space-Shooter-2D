@@ -72,6 +72,10 @@ public class Shields : MonoBehaviour
         {
             CureDamage();
         }
+        else if (collision.tag == "Remove Shield Powerup")
+        {
+            ResetAllShields();
+        }
     }
 
     public void IncreaseShields()

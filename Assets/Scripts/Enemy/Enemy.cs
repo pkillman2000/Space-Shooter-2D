@@ -6,6 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [Header("Speed/Movement")]
+    [SerializeField]
     private float _verticalSpeed;
     private float _verticalMovement;
 
@@ -37,10 +38,19 @@ public class Enemy : MonoBehaviour
     private bool _canFire;
     private float _laserSpeed;
 
+    [Header("Shields")]
+    [SerializeField]
+    private GameObject _shield;
+    [SerializeField]
+    private int _baseActivationPercentage;
+    [SerializeField]
+    private bool _shieldActive;
+
     [Header("Misc")]
     [SerializeField]
     private int _killPoints;
     private bool _isDestroyed = false;
+    
 
     // External Classes
     private Player _player;
@@ -93,6 +103,7 @@ public class Enemy : MonoBehaviour
             Debug.LogWarning("Wave Manager is Null!");
         }
 
+        RandomlyActivateShield();
         _canFire = true;
         _minLaserFireTime = _waveManager.GetMinEnemyFighterFireRate();
         _maxLaserFireTime = _waveManager.GetMaxEnemyFighterFireRate();
@@ -156,17 +167,34 @@ public class Enemy : MonoBehaviour
         {
             if (other.transform.tag == "Player")
             {                
-                _uiManager.UpdateScore(_killPoints);
-                _canFire = false;
-                DestroyAnimation();
+                if(_shieldActive)
+                {
+                    _shieldActive = false;
+                    ChangeShieldStatus();
+                }
+                else
+                {
+                    _uiManager.UpdateScore(_killPoints);
+                    _canFire = false;
+                    DestroyAnimation();
+                }
             }
             else if ((other.transform.tag == "Laser") || (other.transform.tag == "Missile Homing"))
             {               
-                _uiManager.UpdateScore(_killPoints);
-                _canFire = false;
+                if(_shieldActive)
+                {
+                    Destroy(other.transform.gameObject);
+                    _shieldActive = false;
+                    ChangeShieldStatus();
+                }
+                else
+                {
+                    _uiManager.UpdateScore(_killPoints);
+                    _canFire = false;
 
-                Destroy(other.transform.gameObject);
-                DestroyAnimation();
+                    Destroy(other.transform.gameObject);
+                    DestroyAnimation();
+                }
             }
         }
     }
@@ -206,5 +234,30 @@ public class Enemy : MonoBehaviour
         Debug.Log("Enemy - Min/Max: " + min + "/" + max);
         _minLaserFireTime = min;
         _maxLaserFireTime = max;
+    }
+
+    // Shield
+    // Activate/Deactivate shield
+    private void ChangeShieldStatus()
+    {
+        _shield.gameObject.SetActive(_shieldActive);
+    }
+
+    // Use wave level to see if fighter has shield
+    private void RandomlyActivateShield()
+    {
+        int waveLevel = _waveManager.GetCurrentWaveLevel();
+        int activationPercentage = waveLevel * _baseActivationPercentage;
+
+        if(Random.Range(0, 100) <= activationPercentage) 
+        {
+            _shieldActive = true;
+        }
+        else 
+        { 
+            _shieldActive= false;
+        }
+
+        ChangeShieldStatus();
     }
 }

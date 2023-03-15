@@ -14,12 +14,13 @@ public class SpawnManager : MonoBehaviour
     private float _maxEnemySpawnTime;
     //private float _laserSpeed;
     //private float _enemyFighterSpeed;
-    private float _minEnemyFighterFireRate;
-    private float _maxEnemyFighterFireRate;
+    //private float _minEnemyFighterFireRate;
+    //private float _maxEnemyFighterFireRate;
 
     private bool _canEnemySpawn = true;
     private int _enemyFighterWeight;
     private int _enemyBomberWeight;
+    private int _enemyRammerWeight;
 
     // Spawn PowerUps Info
     [SerializeField]
@@ -48,6 +49,7 @@ public class SpawnManager : MonoBehaviour
 
         _enemyFighterWeight = _waveManager.GetEnemyFighterWeight();
         _enemyBomberWeight = _waveManager.GetEnemyBomberWeight();
+        _enemyRammerWeight = _waveManager.GetEnemyRammerWeight();
 
 
         // Get total weight of various spawnable enemies
@@ -57,10 +59,15 @@ public class SpawnManager : MonoBehaviour
             {
                 prefabs[i].GetComponent<SpawnData>().SetSpawnWeight(_enemyFighterWeight);
             }
-            else
+            else if (prefabs[i].gameObject.name == "Enemy Bomber")
             {
                 prefabs[i].GetComponent<SpawnData>().SetSpawnWeight(_enemyBomberWeight);
-            }            
+            } 
+            else if (prefabs[i].gameObject.name == "Enemy Rammer")
+            {
+                prefabs[i].GetComponent<SpawnData>().SetSpawnWeight(_enemyRammerWeight);
+            }
+
             totalWeight += prefabs[i].GetComponent<SpawnData>().GetSpawnWeight();
 
         }

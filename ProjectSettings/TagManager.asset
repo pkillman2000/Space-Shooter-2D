@@ -15,6 +15,7 @@ TagManager:
   - Health Powerup
   - Missile Homing Powerup
   - Missile Homing
+  - Remove Shield Powerup
   layers:
   - Default
   - TransparentFX
