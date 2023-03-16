@@ -133,7 +133,7 @@ public class Engines : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Fuel Powerup")
+        if(collision.gameObject.name == "PowerUp Fuel(Clone)")
         {
             FuelPowerup();
         }

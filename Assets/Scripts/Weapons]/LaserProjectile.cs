@@ -10,7 +10,7 @@ public class LaserProjectile : MonoBehaviour
     [SerializeField]
     private float _selfDestructHeight;
     [SerializeField]
-    private bool _enemyLaser;
+    private bool _moveDownward;
 
     private WaveManager _waveManager;
 
@@ -22,7 +22,7 @@ public class LaserProjectile : MonoBehaviour
             Debug.LogWarning("Wave Manager is Null!");
         }
 
-        if(_enemyLaser) 
+        if(_moveDownward) 
         {
             _laserSpeed = _waveManager.GetEnemyLaserSpeed();
         }
@@ -30,7 +30,7 @@ public class LaserProjectile : MonoBehaviour
 
     void Update()
     {
-        if(!_enemyLaser) // Player laser - bolt goes up, destructs at top of screen
+        if(!_moveDownward) // Player laser - bolt goes up, destructs at top of screen
         {
             transform.Translate(Vector3.up * _laserSpeed * Time.deltaTime);
 

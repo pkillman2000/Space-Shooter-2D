@@ -58,6 +58,7 @@ public class Enemy : MonoBehaviour
     private UIManager _uiManager;
     private SpawnData _spawnData;
     private WaveManager _waveManager;
+    private ShootPowerup _shootPowerUp;
 
     private void Start()
     {
@@ -101,6 +102,12 @@ public class Enemy : MonoBehaviour
         if (_waveManager == null)
         {
             Debug.LogWarning("Wave Manager is Null!");
+        }
+
+        _shootPowerUp = gameObject.GetComponent<ShootPowerup>();
+        if (_shootPowerUp == null)
+        {
+            Debug.LogWarning("Shoot Powerup is Null!");
         }
 
         RandomlyActivateShield();
@@ -159,6 +166,7 @@ public class Enemy : MonoBehaviour
 
         spawnXPosition = Random.Range(_leftBoundary, _rightBoundary);
         transform.position = new Vector3(spawnXPosition, _spawnHeight, 0);
+        _shootPowerUp.ScanForPowerups();
     }
 
     private void OnTriggerEnter2D(Collider2D other)

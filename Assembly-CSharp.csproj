@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Enemy\EnemyDiveBomber.cs" />
     <Compile Include="Assets\Scripts\Weapons]\LaserProjectile.cs" />
     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy\ShootPowerup.cs" />
     <Compile Include="Assets\Scripts\Weapons]\MissileHoming.cs" />
     <Compile Include="Assets\Scripts\Managers\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\Player\Weapons.cs" />

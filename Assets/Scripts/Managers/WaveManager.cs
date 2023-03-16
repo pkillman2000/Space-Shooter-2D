@@ -22,6 +22,7 @@ public class WaveManager : MonoBehaviour
     private int _averageWaveDifficulty;
     [SerializeField]
     private string _currentWaveDifficulty;
+    private bool _powerupVacuumUsed;
 
     [Header("Enemy Spawn Info")]
     [SerializeField]
@@ -34,6 +35,8 @@ public class WaveManager : MonoBehaviour
     private int[] _enemyBomberWeight;
     [SerializeField]
     private int[] _enemyRammerWeight;
+    [SerializeField]
+    private int[] _enemySmartWeight;
 
     [Header("Enemy Info")]
     [SerializeField]
@@ -81,6 +84,8 @@ public class WaveManager : MonoBehaviour
         {
             Debug.LogWarning("Weapons is Null!");
         }
+
+        _powerupVacuumUsed = false;
 
         StartCoroutine(PauseBetweenWavesRoutine());
     }
@@ -196,6 +201,11 @@ public class WaveManager : MonoBehaviour
         return _enemyRammerWeight[_currentWaveID - 1];
     }
 
+    public int GetEnemySmartWeight()
+    {
+        return _enemySmartWeight[_currentWaveID - 1];
+    }
+
     public float GetEnemyFighterMovementSpeed()
     {
         return _enemyFighterSpeed[_currentWaveID - 1];
@@ -234,5 +244,15 @@ public class WaveManager : MonoBehaviour
     public int GetCurrentWaveLevel()
     {
         return _currentWaveID;
+    }
+
+    public bool GetPowerUpVacuumUsed()
+    {
+        return _powerupVacuumUsed;
+    }
+
+    public void SetPowerUpVacuumUsed(bool used)
+    {
+        _powerupVacuumUsed = used;
     }
 }

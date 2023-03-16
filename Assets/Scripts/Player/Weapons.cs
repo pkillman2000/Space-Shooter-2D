@@ -86,15 +86,15 @@ public class Weapons : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Tripleshot Powerup")
+        if (collision.gameObject.name == "PowerUp Triple Shot(Clone)")
         {
             TripleShotActive();
         }
-        else if (collision.tag == "Ammo Powerup")
+        else if (collision.gameObject.name == "PowerUp Ammo(Clone)")
         {
             ReloadAmmo();
         }
-        else if (collision.tag == "Missile Homing Powerup")
+        else if (collision.gameObject.name == "PowerUp Missile Homing(Clone)")
         {
             MissileHomingActive();
         }

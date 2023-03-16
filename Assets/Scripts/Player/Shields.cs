@@ -62,17 +62,18 @@ public class Shields : MonoBehaviour
     {
         if(collision.tag == "Enemy" || collision.tag == "Enemy Laser")
         {
+            Destroy(collision.gameObject);
             DecreaseShields();
         }
-        else if (collision.tag == "Shield Powerup")
+        else if (collision.gameObject.name == "PowerUp Shields(Clone)")
         {
             IncreaseShields();
         }
-        else if (collision.tag == "Health Powerup")
+        else if (collision.gameObject.name == "PowerUp Health(Clone)")
         {
             CureDamage();
         }
-        else if (collision.tag == "Remove Shield Powerup")
+        else if (collision.gameObject.name == "PowerUp Remove Shields(Clone)")
         {
             ResetAllShields();
         }
@@ -101,7 +102,6 @@ public class Shields : MonoBehaviour
             ResetAllShields();
             _shieldActive--;
             _cameraShake.ShakeCamera();
-            Debug.Log("Shield Active: " + _shieldActive);
             
             if (_shieldActive >= 0) // Shields still active
             {

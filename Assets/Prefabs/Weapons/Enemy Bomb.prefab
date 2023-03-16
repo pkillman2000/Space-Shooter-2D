@@ -138,4 +138,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _laserSpeed: 8
   _selfDestructHeight: -7.5
-  _enemyLaser: 1
+  _moveDownward: 1

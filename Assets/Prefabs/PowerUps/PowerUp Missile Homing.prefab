@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3914313092944129345}
   m_Layer: 0
   m_Name: PowerUp Missile Homing
-  m_TagString: Missile Homing Powerup
+  m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,10 +140,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _horizontalSpeed: 0
   _verticalSpeed: 3
+  _vacuumSpeed: 6
   _destroyHeight: -8
   _powerUpAudioVolume: 0.5
   _powerUpAudioClip: {fileID: 8300000, guid: 5ee343246919d2b4bba63ae629e95494, type: 3}
   _spawnWeight: 5
+  _explosionPrefab: {fileID: 4559686659021846952, guid: c9dda17136c4a8f459e44076ea7585a6, type: 3}
 --- !u!82 &4588853197910747510
 AudioSource:
   m_ObjectHideFlags: 0

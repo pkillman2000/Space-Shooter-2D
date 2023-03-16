@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 9033641288192335673}
   - component: {fileID: -7387696457596175658}
   - component: {fileID: -6408809510229833957}
+  - component: {fileID: 3463780849989176744}
   m_Layer: 0
   m_Name: Enemy Fighter
   m_TagString: Enemy
@@ -293,6 +294,21 @@ MonoBehaviour:
   _upperLeftBoundary: {x: -11.5, y: 9.5}
   _lowerRightBoundary: {x: 11.5, y: 8.5}
   _spawnWeight: 50
+--- !u!114 &3463780849989176744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517985575059760296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81a4cbb7e563b074687b0d4575e85255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _laserAudioClip: {fileID: 8300000, guid: 75676f361bdfeaf41a46623e95df3dbc, type: 3}
+  _laserVolume: 0.5
+  _laserPrefab: {fileID: 5419716380047836031, guid: e32f08df4ab3fa343ad8ee0b30ebac37, type: 3}
 --- !u!1001 &3336975009596991807
 PrefabInstance:
   m_ObjectHideFlags: 0

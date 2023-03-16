@@ -360,6 +360,7 @@
 "Assets/Scripts/Enemy/EnemyDiveBomber.cs"
 "Assets/Scripts/Enemy/EnemyRammer.cs"
 "Assets/Scripts/Enemy/EnemySmart.cs"
+"Assets/Scripts/Enemy/ShootPowerup.cs"
 "Assets/Scripts/Managers/GameManager.cs"
 "Assets/Scripts/Managers/MainMenu.cs"
 "Assets/Scripts/Managers/PathData.cs"
