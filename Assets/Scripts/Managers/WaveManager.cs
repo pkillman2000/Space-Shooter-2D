@@ -37,6 +37,8 @@ public class WaveManager : MonoBehaviour
     private int[] _enemyRammerWeight;
     [SerializeField]
     private int[] _enemySmartWeight;
+    [SerializeField]
+    private int[] _enemyDodgeWeight;
 
     [Header("Enemy Info")]
     [SerializeField]
@@ -204,6 +206,11 @@ public class WaveManager : MonoBehaviour
     public int GetEnemySmartWeight()
     {
         return _enemySmartWeight[_currentWaveID - 1];
+    }
+
+    public int GetEnemyDodgeWeight()
+    {
+        return _enemyDodgeWeight[_currentWaveID - 1];
     }
 
     public float GetEnemyFighterMovementSpeed()

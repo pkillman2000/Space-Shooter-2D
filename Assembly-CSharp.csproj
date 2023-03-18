@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Visual Effects\ScrollingBackground.cs" />
     <Compile Include="Assets\Scripts\Player\Engines.cs" />
     <Compile Include="Assets\Scripts\Visual Effects\Explosion.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyDodge.cs" />
     <Compile Include="Assets\Scripts\Managers\SpawnData.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Visual Effects\RotateObject.cs" />

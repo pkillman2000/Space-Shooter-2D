@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 8357206361059059960}
   m_Layer: 0
   m_Name: Laser TripleShot
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _laserSpeed: 8
   _selfDestructHeight: 8
-  _enemyLaser: 0
+  _moveDownward: 0
 --- !u!1 &7103744082449796785
 GameObject:
   m_ObjectHideFlags: 0

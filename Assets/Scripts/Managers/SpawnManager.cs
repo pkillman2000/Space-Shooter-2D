@@ -22,6 +22,7 @@ public class SpawnManager : MonoBehaviour
     private int _enemyBomberWeight;
     private int _enemyRammerWeight;
     private int _enemySmartWeight;
+    private int _enemyDodgeWeight;
 
     // Spawn PowerUps Info
     [SerializeField]
@@ -52,7 +53,7 @@ public class SpawnManager : MonoBehaviour
         _enemyBomberWeight = _waveManager.GetEnemyBomberWeight();
         _enemyRammerWeight = _waveManager.GetEnemyRammerWeight();
         _enemySmartWeight = _waveManager.GetEnemySmartWeight();
-
+        _enemyDodgeWeight = _waveManager.GetEnemyDodgeWeight();
 
         // Get total weight of various spawnable enemies
         for (int i = 0; i < prefabs.Length; i++)
@@ -72,6 +73,10 @@ public class SpawnManager : MonoBehaviour
             else if (prefabs[i].gameObject.name == "Enemy Smart")
             {
                 prefabs[i].GetComponent<SpawnData>().SetSpawnWeight(_enemySmartWeight);
+            }
+            else if (prefabs[i].gameObject.name == "Enemy Dodge")
+            {
+                prefabs[i].GetComponent<SpawnData>().SetSpawnWeight(_enemyDodgeWeight);
             }
 
             totalWeight += prefabs[i].GetComponent<SpawnData>().GetSpawnWeight();

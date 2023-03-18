@@ -2820,65 +2820,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _enemySpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _laserSpeed
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _maxEnemySpawnTime
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _minEnemySpawnTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _minPowerUpSpawnTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _enemyPrefab.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _powerUpPrefab.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _enemyPrefab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1517985575059760296, guid: 2fa11983fad3d5246a23f0977a9bacc8, type: 3}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _enemyPrefab.Array.data[1]
-      value: 
-      objectReference: {fileID: 4445376105900548077, guid: 7b2e9dbaa5b89764683990da0f6f7819, type: 3}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _enemyPrefab.Array.data[2]
-      value: 
-      objectReference: {fileID: 2444332417775075539, guid: a5d626a9616f75842b340796620c6aa6, type: 3}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _enemyPrefab.Array.data[3]
-      value: 
-      objectReference: {fileID: 1135354189762133936, guid: d03d9b67b99e5ce4fbdaff61712a32c5, type: 3}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _powerUpPrefab.Array.data[5]
-      value: 
-      objectReference: {fileID: 3906640683032365008, guid: 6d5ae8d7b126f6a4ba411c2cbadc7c2e, type: 3}
-    - target: {fileID: 6344156372910293429, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: _powerUpPrefab.Array.data[6]
-      value: 
-      objectReference: {fileID: 6566491840107507465, guid: e4d62d62e5de98e4abf4072e041819a2, type: 3}
     - target: {fileID: 6344156372910293430, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
       propertyPath: m_Name
       value: Spawn Manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 6344156372910293430, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1660bac7e25d2447be65aff8fe96363, type: 3}
@@ -3026,6 +2970,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyDodgeWeight.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _enemySmartWeight.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -3100,6 +3048,26 @@ PrefabInstance:
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _enemyBomberSpeed.Array.data[4]
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyDodgeWeight.Array.data[0]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyDodgeWeight.Array.data[1]
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyDodgeWeight.Array.data[2]
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyDodgeWeight.Array.data[3]
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyDodgeWeight.Array.data[4]
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _enemySmartWeight.Array.data[0]
