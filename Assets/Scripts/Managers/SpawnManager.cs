@@ -29,6 +29,7 @@ public class SpawnManager : MonoBehaviour
     private GameObject[] _powerUpPrefab;
     private float _minPowerUpSpawnTime;
     private float _maxPowerUpSpawnTime;
+    [SerializeField]
     private bool _canPowerUpSpawn = true;
 
     private WaveManager _waveManager;
@@ -54,6 +55,7 @@ public class SpawnManager : MonoBehaviour
         _enemyRammerWeight = _waveManager.GetEnemyRammerWeight();
         _enemySmartWeight = _waveManager.GetEnemySmartWeight();
         _enemyDodgeWeight = _waveManager.GetEnemyDodgeWeight();
+
 
         // Get total weight of various spawnable enemies
         for (int i = 0; i < prefabs.Length; i++)
@@ -83,7 +85,7 @@ public class SpawnManager : MonoBehaviour
 
         }
         // Select random enemy based on weight
-        randomWeight = Random.Range(0, totalWeight + 1);
+        randomWeight = Random.Range(1, totalWeight + 1);
 
         for (int i = 0; i < prefabs.Length; ++i)
         {
@@ -109,6 +111,12 @@ public class SpawnManager : MonoBehaviour
     {
         _canEnemySpawn = false;
         _canPowerUpSpawn = false;
+    }
+
+    public void SpawnPowerUps()
+    {
+        _canPowerUpSpawn = true;
+        StartCoroutine(SpawnPowerUpRoutine());
     }
 
     // Spawn Enemies
@@ -154,13 +162,14 @@ public class SpawnManager : MonoBehaviour
         newEnemy.transform.parent = _enemyContainer.transform;
     }
 
-
     // Spawn Powerups
     IEnumerator SpawnPowerUpRoutine()
     {
         float currentSpawnTime;
         _minPowerUpSpawnTime = _waveManager.GetMinSpawnTime();
         _maxPowerUpSpawnTime += _waveManager.GetMaxSpawnTime();
+
+        Debug.Log("Min/Max/Can Spawn: " + _minPowerUpSpawnTime + "/" + _maxPowerUpSpawnTime + "/" + _canPowerUpSpawn);
 
         while (_canPowerUpSpawn)
         {

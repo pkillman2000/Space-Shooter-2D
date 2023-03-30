@@ -357,6 +357,7 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Enemy/Enemy.cs"
+"Assets/Scripts/Enemy/EnemyBoss.cs"
 "Assets/Scripts/Enemy/EnemyDiveBomber.cs"
 "Assets/Scripts/Enemy/EnemyDodge.cs"
 "Assets/Scripts/Enemy/EnemyRammer.cs"
@@ -379,8 +380,10 @@
 "Assets/Scripts/Visual Effects/Explosion.cs"
 "Assets/Scripts/Visual Effects/RotateObject.cs"
 "Assets/Scripts/Visual Effects/ScrollingBackground.cs"
-"Assets/Scripts/Weapons]/LaserProjectile.cs"
-"Assets/Scripts/Weapons]/MissileHoming.cs"
+"Assets/Scripts/Weapons/EnemyTurret.cs"
+"Assets/Scripts/Weapons/LaserProjectile.cs"
+"Assets/Scripts/Weapons/LaserProjectileAimed.cs"
+"Assets/Scripts/Weapons/MissileHoming.cs"
 -langversion:9.0
 
 /deterministic

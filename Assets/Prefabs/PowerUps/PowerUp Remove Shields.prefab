@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: dbbe00ef1bf8b214996caa8d700231a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -140,10 +140,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _horizontalSpeed: 0
   _verticalSpeed: 3
+  _vacuumSpeed: 0
   _destroyHeight: -8
   _powerUpAudioVolume: 0.5
   _powerUpAudioClip: {fileID: 8300000, guid: fd0426591ab8cb843ad99b0aed8d494f, type: 3}
   _spawnWeight: 5
+  _explosionPrefab: {fileID: 0}
 --- !u!82 &8835218258606295080
 AudioSource:
   m_ObjectHideFlags: 0

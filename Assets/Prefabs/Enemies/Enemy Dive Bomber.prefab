@@ -245,9 +245,6 @@ MonoBehaviour:
   _difficultPaths:
   - {fileID: 2214200210488950089, guid: ff2ff4aef10c0a24b815eb2041b31b89, type: 3}
   - {fileID: 1869479104910619154, guid: 02de05665fb6286488d1f641bd46853c, type: 3}
-  _paths:
-  - {fileID: 3169808889789582205, guid: c26efa17cabba6c46b160eb7e9e6a23a, type: 3}
-  - {fileID: 3559578324778559154, guid: 9b3b4391149d6a740ba6f6e908a2746d, type: 3}
   _waypoints:
   - {fileID: 0}
   _bombAudioClip: {fileID: 8300000, guid: 4cf06743b9ac37643ae4d558c1fe86ef, type: 3}
@@ -273,4 +270,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _upperLeftBoundary: {x: 12, y: 1}
   _lowerRightBoundary: {x: 13, y: -1}
-  _spawnWeight: 10
+  _spawnWeight: 0

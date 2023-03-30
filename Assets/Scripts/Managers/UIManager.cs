@@ -27,6 +27,12 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private Gradient _ammoBarGradient;
 
+    [Header("Boss Wave")]
+    [SerializeField]
+    private TMP_Text _bossWaveText;
+    [SerializeField]
+    private TMP_Text _bossWaveInstructionsText;
+
     [Header("Game Over")]
     [SerializeField]
     private TMP_Text _restartMessage;
@@ -184,5 +190,17 @@ public class UIManager : MonoBehaviour
         // an added feature later.
         // _waveCompleteStatsText.text = "Destroyed: " + destroyed.ToString() + "/" + total.ToString();
         // _waveCompleteStatsText.gameObject.SetActive(true);
+    }
+
+    // Boss Wave
+    public void DisplayBossWaveText(bool canDisplay)
+    {
+        // Hide text still on screen
+        _waveCompleteText.gameObject.SetActive(false);
+        _waveCompleteStatsText.gameObject.SetActive(false);
+        
+        // Display Boss Wave Text
+        _bossWaveText.gameObject.SetActive(canDisplay);
+        _bossWaveInstructionsText.gameObject.SetActive(canDisplay);
     }
 }

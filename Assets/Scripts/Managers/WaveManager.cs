@@ -50,11 +50,17 @@ public class WaveManager : MonoBehaviour
     [SerializeField]
     private float[] _maxEnemyFighterFireRate;
 
-    [Header("Spawn Info")]
+    [Header("PowerUp Spawn Info")]
     [SerializeField]
     private float[] _minSpawnTime;
     [SerializeField]
     private float[] _maxSpawnTime;
+
+    [Header("Boss Wave")]
+    [SerializeField]
+    private GameObject _enemyBossPrefab;
+    [SerializeField]
+    private Vector3 _enemyBossSpawnLocation;
 
     private SpawnManager _spawnManager;
     private ScrollingBackground _scrollingBackground;
@@ -87,6 +93,8 @@ public class WaveManager : MonoBehaviour
             Debug.LogWarning("Weapons is Null!");
         }
 
+        
+
         _powerupVacuumUsed = false;
 
         StartCoroutine(PauseBetweenWavesRoutine());
@@ -97,8 +105,10 @@ public class WaveManager : MonoBehaviour
         _spawnManager.StartSpawning();
         _scrollingBackground.StartScrolling();
         _weapons.ReloadAmmo();
-
-        StartCoroutine(WaveTimerRoutine());
+        if(_currentWaveID <= _maxNumberOfWaves)
+        {
+            StartCoroutine(WaveTimerRoutine());
+        }
     }
 
     private void CalculateWaveDifficulties()
@@ -165,27 +175,32 @@ public class WaveManager : MonoBehaviour
         yield return new WaitForSeconds(_pauseBetweenWaves);
         
         _currentWaveID++;
-        CalculateWaveDifficulties();
 
+        // Normal Waves
         if (_currentWaveID <= _maxNumberOfWaves)
         {
+            CalculateWaveDifficulties();
             _uiManager.StartNewWave(_currentWaveID);
         }
-        else
+        else // Boss Wave
         {
             yield return new WaitForSeconds(_pauseBetweenWaves);
-            _uiManager.GameOver(true);
+            _uiManager.DisplayBossWaveText(true);
+            yield return new WaitForSeconds(_pauseBetweenWaves);
+            _uiManager.DisplayBossWaveText(false);
+            _spawnManager.SpawnPowerUps();
+            Instantiate(_enemyBossPrefab, _enemyBossSpawnLocation, Quaternion.identity);
         }
     }
 
     public float GetMinimumEnemySpawnRate()
     {
-        return _minEnemySpawnTime[_currentWaveID - 1];
+            return _minEnemySpawnTime[_currentWaveID - 1];
     }
 
     public float GetMaximumEnemySpawnRate() 
     {
-        return (_maxEnemySpawnTime[_currentWaveID - 1]);
+            return (_maxEnemySpawnTime[_currentWaveID - 1]);
     }
 
     public int GetEnemyFighterWeight()
