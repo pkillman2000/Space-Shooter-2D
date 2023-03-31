@@ -169,8 +169,6 @@ public class SpawnManager : MonoBehaviour
         _minPowerUpSpawnTime = _waveManager.GetMinSpawnTime();
         _maxPowerUpSpawnTime += _waveManager.GetMaxSpawnTime();
 
-        Debug.Log("Min/Max/Can Spawn: " + _minPowerUpSpawnTime + "/" + _maxPowerUpSpawnTime + "/" + _canPowerUpSpawn);
-
         while (_canPowerUpSpawn)
         {
             SpawnPowerUp();

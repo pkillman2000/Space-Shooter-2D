@@ -168,6 +168,5 @@ public class Shields : MonoBehaviour
             Instantiate(_damagePrefabs[2], transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-
     }
 }

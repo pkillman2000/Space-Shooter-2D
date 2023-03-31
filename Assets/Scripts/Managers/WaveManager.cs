@@ -148,7 +148,7 @@ public class WaveManager : MonoBehaviour
 
     // Enemy fighters and dive bombers both have the tag
     // of Enemy.  All enemy weapons have the tag of Enemy Laser
-    private void DestroyAllEnemies()
+    public void DestroyAllEnemies()
     {
         GameObject[] enemies;
         GameObject[] enemyWeapons;
@@ -186,6 +186,7 @@ public class WaveManager : MonoBehaviour
         {
             yield return new WaitForSeconds(_pauseBetweenWaves);
             _uiManager.DisplayBossWaveText(true);
+            _weapons.ReloadAmmo();
             yield return new WaitForSeconds(_pauseBetweenWaves);
             _uiManager.DisplayBossWaveText(false);
             _spawnManager.SpawnPowerUps();

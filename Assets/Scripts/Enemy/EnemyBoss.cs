@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class EnemyBoss : MonoBehaviour
 {
-    // Movement
+    [Header("Movement")]
     [SerializeField]
     private float _movementSpeed;
     [SerializeField]
     Vector3 _waypoint;
     private bool _isMoving;
 
-    // Health
+    [Header("Health")]
     [SerializeField]
     private int _hitPoints;
     [SerializeField]
@@ -20,8 +20,28 @@ public class EnemyBoss : MonoBehaviour
     private bool _turretsDestroyed;
     [SerializeField]
     private GameObject _explosion;
+    [SerializeField]
+    private int _killPoints;
 
-    AudioSource _audioSource;
+    [Header("Spawning")]
+    [SerializeField]
+    private GameObject _bomberPrefab;
+    [SerializeField]
+    private Vector3 _spawnPosition;
+    [SerializeField]
+    private int _numberToSpawn;
+    [SerializeField]
+    private float _minSpawnTime;
+    [SerializeField]
+    private float _maxSpawnTime;
+    [SerializeField]
+    private float _bomberSpacingTime;
+    [SerializeField]
+    private bool _canSpawn;
+
+    private AudioSource _audioSource;
+    private UIManager _uiManager;
+    private WaveManager _waveManager;
 
     void Start()
     {
@@ -30,6 +50,19 @@ public class EnemyBoss : MonoBehaviour
         {
             Debug.LogWarning("Audio Source not Found!");
         }
+
+        _uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
+        if (_uiManager == null)
+        {
+            Debug.LogWarning("UI Manager is Null!");
+        }
+
+        _waveManager = GameObject.Find("Wave Manager").GetComponent<WaveManager>();
+        if (_waveManager == null)
+        {
+            Debug.LogWarning("Wave Manager is Null");
+        }
+
 
         _isMoving = true;
         _turretsDestroyed = false;
@@ -41,14 +74,16 @@ public class EnemyBoss : MonoBehaviour
         // Move towards waypoint - stop when reached
         if(_isMoving) 
         {
-            if (Vector3.Distance(transform.position, _waypoint) > 0.01f)
+            if (Vector3.Distance(transform.position, _waypoint) > 0.01f) // Still Moving
             {
                 transform.position = Vector3.MoveTowards(transform.position, _waypoint, _movementSpeed * Time.deltaTime);
             }
-            else
+            else // Done Moving
             {
                 _isMoving = false;
                 _audioSource.Stop();
+                _canSpawn = true;
+                StartCoroutine(SpawnRoutine());
             }
         }
     }
@@ -68,11 +103,37 @@ public class EnemyBoss : MonoBehaviour
         {            
             if(_hitPoints <= 0) // Rig multiple explosions throughout the ship
             {
+                _uiManager.UpdateScore(_killPoints);
+                _waveManager.DestroyAllEnemies();
                 Instantiate(_explosion, transform.position, Quaternion.identity);
-                // UI Manager - Game Won
+                _uiManager.GameOver(true);
                 Destroy(this.gameObject);
             }
             _hitPoints--;
+        }
+    }
+
+    IEnumerator SpawnRoutine()
+    {
+        float currentSpawnTime;
+
+        while (_canSpawn)
+        {
+            StartCoroutine(SpawnBombersRoutine());
+            currentSpawnTime = Random.Range(_minSpawnTime, _maxSpawnTime);
+            yield return new WaitForSeconds(currentSpawnTime);
+        }
+    }
+
+    IEnumerator SpawnBombersRoutine()
+    {
+        int _counter = 0;
+        
+        while (_counter < _numberToSpawn)
+        {
+            Instantiate(_bomberPrefab, _spawnPosition, Quaternion.identity);
+            yield return new WaitForSeconds(_bomberSpacingTime);
+            _counter++;
         }
     }
 }

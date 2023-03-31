@@ -1155,7 +1155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
       propertyPath: _maxLaserAmmo
-      value: 15
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
       propertyPath: _laserFireRate
@@ -1163,7 +1163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
       propertyPath: _currentLaserAmmo
-      value: 15
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: -8363120541949659277, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
       propertyPath: _tripleShotDuration
@@ -1258,8 +1258,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6127027250548051555, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
-      propertyPath: _horizontalSpeed
+      propertyPath: _verticalSpeed
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127027250548051555, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: _horizontalSpeed
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127027250548051555, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
+      propertyPath: _speedBoostSpeed
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c59c269fe27d44a44a98dfaa2437f5c7, type: 3}
@@ -2856,8 +2864,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2842340432377008636, guid: c61fbebf6e22af74bb1139076e608647, type: 3}
-      propertyPath: _verticalSpeedThrusters
+      propertyPath: _verticalScrollSpeed
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2842340432377008636, guid: c61fbebf6e22af74bb1139076e608647, type: 3}
+      propertyPath: _verticalSpeedThrusters
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2842340432377008637, guid: c61fbebf6e22af74bb1139076e608647, type: 3}
       propertyPath: m_Name
@@ -2945,7 +2957,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press the 'R' key to restart the level
+  m_text: 'Press the ''R'' key to restart the level.
+
+    Press the ''Esc'' key to
+    exit the game.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3214,7 +3229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _waveLength
-      value: 5
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _currentWaveID
@@ -3278,23 +3293,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _maxSpawnTime.Array.data[0]
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _maxSpawnTime.Array.data[1]
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _maxSpawnTime.Array.data[2]
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _maxSpawnTime.Array.data[3]
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _maxSpawnTime.Array.data[4]
-      value: 9
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _maxSpawnTime.Array.data[5]
@@ -3302,23 +3317,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _minSpawnTime.Array.data[0]
-      value: 4.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _minSpawnTime.Array.data[1]
-      value: 45
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _minSpawnTime.Array.data[2]
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _minSpawnTime.Array.data[3]
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _minSpawnTime.Array.data[4]
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _minSpawnTime.Array.data[5]
@@ -3378,26 +3393,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _enemyLaserSpeed.Array.data[0]
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _enemyLaserSpeed.Array.data[1]
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _enemyLaserSpeed.Array.data[2]
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _enemyLaserSpeed.Array.data[3]
-      value: 9
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _enemyLaserSpeed.Array.data[4]
-      value: 9
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _enemyLaserSpeed.Array.data[5]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyLaserSpeed.Array.data[6]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyLaserSpeed.Array.data[7]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyLaserSpeed.Array.data[8]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyLaserSpeed.Array.data[9]
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
@@ -3443,6 +3474,14 @@ PrefabInstance:
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _enemyDodgeWeight.Array.data[5]
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyLaserSpeed.Array.data[10]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyLaserSpeed.Array.data[11]
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _enemySmartWeight.Array.data[0]
@@ -3534,26 +3573,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _enemyFighterSpeed.Array.data[0]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
-      propertyPath: _enemyFighterSpeed.Array.data[1]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
-      propertyPath: _enemyFighterSpeed.Array.data[2]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
-      propertyPath: _enemyFighterSpeed.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
-      propertyPath: _enemyFighterSpeed.Array.data[4]
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyFighterSpeed.Array.data[1]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyFighterSpeed.Array.data[2]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyFighterSpeed.Array.data[3]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyFighterSpeed.Array.data[4]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
       propertyPath: _enemyFighterSpeed.Array.data[5]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyFighterSpeed.Array.data[6]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}
+      propertyPath: _enemyFighterSpeed.Array.data[7]
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7982318889993074699, guid: bb4f94ade0d24dc46b6dbc91200ea37c, type: 3}

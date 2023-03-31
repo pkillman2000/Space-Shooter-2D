@@ -219,3 +219,4 @@ MonoBehaviour:
   _laserVolume: 0.5
   _hitPoints: 1
   _explosion: {fileID: 4559686659021846952, guid: c9dda17136c4a8f459e44076ea7585a6, type: 3}
+  _killPoints: 50

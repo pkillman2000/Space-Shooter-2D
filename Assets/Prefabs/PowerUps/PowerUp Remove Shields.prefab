@@ -145,7 +145,7 @@ MonoBehaviour:
   _powerUpAudioVolume: 0.5
   _powerUpAudioClip: {fileID: 8300000, guid: fd0426591ab8cb843ad99b0aed8d494f, type: 3}
   _spawnWeight: 5
-  _explosionPrefab: {fileID: 0}
+  _explosionPrefab: {fileID: 4559686659021846952, guid: c9dda17136c4a8f459e44076ea7585a6, type: 3}
 --- !u!82 &8835218258606295080
 AudioSource:
   m_ObjectHideFlags: 0

@@ -32,7 +32,11 @@ public class EnemyTurret : MonoBehaviour
     private int _hitPoints;
     [SerializeField]
     private GameObject _explosion;
+    [SerializeField]
+    private int _killPoints;
+
     private EnemyBoss _enemyBoss;
+    private UIManager _uiManager;
 
     private void Start()
     {
@@ -52,6 +56,12 @@ public class EnemyTurret : MonoBehaviour
         if (_enemyBoss == null)
         {
             Debug.LogWarning("Enemy Boss is Null!");
+        }
+
+        _uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
+        if (_uiManager == null) 
+        {
+            Debug.LogWarning("UI Manager is Null!");
         }
 
         _canFire = true;
@@ -95,6 +105,7 @@ public class EnemyTurret : MonoBehaviour
             Destroy (collision.gameObject);
             if(_hitPoints == 0 )
             {
+                _uiManager.UpdateScore(_killPoints);
                 Instantiate (_explosion, this.transform.position, Quaternion.identity);
                 _enemyBoss.TurretDestroyed();
                 Destroy(this.gameObject);
