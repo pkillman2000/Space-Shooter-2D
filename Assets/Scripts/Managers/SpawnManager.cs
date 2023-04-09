@@ -12,11 +12,6 @@ public class SpawnManager : MonoBehaviour
     private GameObject _enemyContainer;
     private float _minEnemySpawnTime;
     private float _maxEnemySpawnTime;
-    //private float _laserSpeed;
-    //private float _enemyFighterSpeed;
-    //private float _minEnemyFighterFireRate;
-    //private float _maxEnemyFighterFireRate;
-
     private bool _canEnemySpawn = true;
     private int _enemyFighterWeight;
     private int _enemyBomberWeight;
@@ -32,6 +27,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     private bool _canPowerUpSpawn = true;
 
+    // External Classes
     private WaveManager _waveManager;
 
     private void Start()
@@ -84,6 +80,7 @@ public class SpawnManager : MonoBehaviour
             totalWeight += prefabs[i].GetComponent<SpawnData>().GetSpawnWeight();
 
         }
+
         // Select random enemy based on weight
         randomWeight = Random.Range(1, totalWeight + 1);
 
@@ -161,6 +158,7 @@ public class SpawnManager : MonoBehaviour
         newEnemy = Instantiate(_enemyPrefab[randomEnemy], new Vector3(spawnXPosition, spawnYPosition, 0), Quaternion.identity);
         newEnemy.transform.parent = _enemyContainer.transform;
     }
+    // End Spawn Enemies
 
     // Spawn Powerups
     IEnumerator SpawnPowerUpRoutine()

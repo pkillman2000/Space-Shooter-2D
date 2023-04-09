@@ -55,6 +55,7 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private TMP_Text _waveCompleteStatsText;
 
+    // External Classes
     private SpawnManager _spawnManager;
     private ScrollingBackground _scrollingBackground;
     private WaveManager _waveManager;
@@ -150,7 +151,7 @@ public class UIManager : MonoBehaviour
         _ammoBar.color = _ammoBarGradient.Evaluate(ammoPercentage);
     }
 
-    // Wave Start
+    // Wave
     public void StartNewWave(int waveNumber)
     {
         _waveCompleteText.gameObject.SetActive(false);
@@ -179,7 +180,6 @@ public class UIManager : MonoBehaviour
         _waveManager.StartNewWave();        
     }
 
-    // Wave End
     public void EndCurrentWave(int currentLevel, int total, int destroyed)
     {
         
@@ -191,6 +191,7 @@ public class UIManager : MonoBehaviour
         // _waveCompleteStatsText.text = "Destroyed: " + destroyed.ToString() + "/" + total.ToString();
         // _waveCompleteStatsText.gameObject.SetActive(true);
     }
+    // End Wave
 
     // Boss Wave
     public void DisplayBossWaveText(bool canDisplay)

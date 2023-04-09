@@ -9,15 +9,13 @@ public class EnemyDodge : MonoBehaviour
     private float _verticalSpeed;
     [SerializeField]
     private float _horizontalSpeed;
+    [SerializeField]
+    private float _destroyHeight;
     private float _verticalMovement;
     private float _horizontalMovement;
-
     private float _leftBoundary;
     private float _rightBoundary;
     private float _spawnHeight;
-    [SerializeField]
-    private float _destroyHeight;
-
 
     [Header("Audio")]
     [SerializeField]
@@ -25,7 +23,6 @@ public class EnemyDodge : MonoBehaviour
     [SerializeField]
     [Range(0f, 1f)]
     private float _laserVolume;
-    private AudioSource _audioSource;
 
     [Header("Weapons")]
     [SerializeField]
@@ -48,6 +45,7 @@ public class EnemyDodge : MonoBehaviour
     GameObject _player;
     UIManager _uiManager;
     SpawnData _spawnData;
+    private AudioSource _audioSource;
 
     void Start()
     {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+// This script handles all things Player shields and damage related
 public class Shields : MonoBehaviour
 {
     [Header("Shields")]
@@ -19,6 +20,7 @@ public class Shields : MonoBehaviour
     [SerializeField]
     private int _lives;
 
+    // External Classes
     private UIManager _uiManager;
     private SpawnManager _spawnManager;
     private ScrollingBackground _scrollingBackground;

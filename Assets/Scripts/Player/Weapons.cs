@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// This script handles all things Player weapon related
 public class Weapons : MonoBehaviour
 {
     [Header("Lasers")]
@@ -84,6 +85,7 @@ public class Weapons : MonoBehaviour
         FireWeapon();
     }
 
+    // Weapon related powerups
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "PowerUp Triple Shot(Clone)")

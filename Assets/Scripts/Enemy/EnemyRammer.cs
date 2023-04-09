@@ -75,6 +75,7 @@ public class EnemyRammer : MonoBehaviour
 
         transform.Translate(new Vector3(_horizontalMovement, 0, 0));
     }
+    // End Movement
 
     private void OnTriggerEnter2D(Collider2D other)
     {

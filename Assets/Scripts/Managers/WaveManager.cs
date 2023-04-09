@@ -62,6 +62,7 @@ public class WaveManager : MonoBehaviour
     [SerializeField]
     private Vector3 _enemyBossSpawnLocation;
 
+    // External Classes
     private SpawnManager _spawnManager;
     private ScrollingBackground _scrollingBackground;
     private UIManager _uiManager;
@@ -91,9 +92,7 @@ public class WaveManager : MonoBehaviour
         if (_weapons == null) 
         {
             Debug.LogWarning("Weapons is Null!");
-        }
-
-        
+        }        
 
         _powerupVacuumUsed = false;
 
@@ -146,8 +145,8 @@ public class WaveManager : MonoBehaviour
         StartCoroutine(PauseBetweenWavesRoutine());
     }
 
-    // Enemy fighters and dive bombers both have the tag
-    // of Enemy.  All enemy weapons have the tag of Enemy Laser
+    // Enemy ships have the tag of Enemy
+    // All enemy weapons have the tag of Enemy Laser
     public void DestroyAllEnemies()
     {
         GameObject[] enemies;

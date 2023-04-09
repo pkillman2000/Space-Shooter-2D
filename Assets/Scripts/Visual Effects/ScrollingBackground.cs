@@ -64,7 +64,6 @@ public class ScrollingBackground : MonoBehaviour
         }
     }
 
-
     // I could just pass in a bool, but it's easier
     // in other scripts to have separate methods
     public void StopScrolling()

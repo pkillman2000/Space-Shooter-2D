@@ -25,7 +25,6 @@ public class EnemyTurret : MonoBehaviour
     [SerializeField]
     [Range(0f, 1f)]
     private float _laserVolume;
-    private AudioSource _audioSource;
 
     [Header("Damage")]
     [SerializeField]
@@ -35,8 +34,10 @@ public class EnemyTurret : MonoBehaviour
     [SerializeField]
     private int _killPoints;
 
+    // External Classes
     private EnemyBoss _enemyBoss;
     private UIManager _uiManager;
+    private AudioSource _audioSource;
 
     private void Start()
     {

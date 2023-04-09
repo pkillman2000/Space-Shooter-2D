@@ -9,7 +9,7 @@ public class LaserProjectile : MonoBehaviour
     [SerializeField]
     private float _selfDestructHeight;
     [SerializeField]
-    private bool _moveDownward;
+    private bool _moveDownward; // Lets laser be used for Player or Enemy
 
     private WaveManager _waveManager;
 

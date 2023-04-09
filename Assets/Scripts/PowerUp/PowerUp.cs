@@ -31,8 +31,7 @@ public class PowerUp : MonoBehaviour
     [SerializeField]
     private GameObject _explosionPrefab;
 
-    private SpriteRenderer _spriteRenderer;
-    private Engines _engine;
+    // External Classes
     private GameObject _player;
     private WaveManager _waveManager;
 
@@ -42,18 +41,6 @@ public class PowerUp : MonoBehaviour
         if(_audioSource == null)
         {
             Debug.LogWarning("Audio Source is Null!");
-        }
-
-        _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        if(_spriteRenderer == null)
-        {
-            Debug.LogWarning("Sprite Renderer is Null!");
-        }
-
-        _engine = GameObject.Find("Player").GetComponent<Engines>();
-        if(_engine == null)
-        {
-            Debug.LogWarning("Engines is Null!");
         }
 
         _player = GameObject.Find("Player");

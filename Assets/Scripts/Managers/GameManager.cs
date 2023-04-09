@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
-        
+        DontDestroyOnLoad(this.gameObject);        
     }
 
-
+    // End game if ESC is pressed
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape)) 

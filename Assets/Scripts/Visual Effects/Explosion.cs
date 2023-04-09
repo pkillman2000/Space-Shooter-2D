@@ -25,6 +25,7 @@ public class Explosion : MonoBehaviour
         clipInfo = _animator.runtimeAnimatorController.animationClips;
         animLength = clipInfo[0].length;
 
+        // Don't destroy game object until animation is complete
         Destroy(gameObject, animLength);
     }
 

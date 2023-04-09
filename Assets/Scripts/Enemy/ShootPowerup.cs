@@ -11,11 +11,14 @@ public class ShootPowerup : MonoBehaviour
     [SerializeField]
     [Range(0f, 1f)]
     private float _laserVolume;
-    private AudioSource _audioSource;
 
     [Header("Weapons")]
     [SerializeField]
     private GameObject _laserPrefab;
+
+    // External Classes
+    private AudioSource _audioSource;
+
 
     void Start()
     {

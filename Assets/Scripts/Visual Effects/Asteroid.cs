@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// This was originally used as a way to start the game.
+// Later, UI was addes with a New Game button.
+// It is currently not used.
+
 public class Asteroid : MonoBehaviour
 {
     [SerializeField]
     private GameObject _explosionPrefab;
 
+    // External Classes
     private SpawnManager _spawnManager;
     private ScrollingBackground _scrollingBackground;
 
@@ -24,8 +29,6 @@ public class Asteroid : MonoBehaviour
             Debug.LogWarning("Scrolling Background is Null!");
         }
     }
-
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

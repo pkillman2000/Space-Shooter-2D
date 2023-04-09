@@ -132,7 +132,7 @@ public class Enemy : MonoBehaviour
         if (transform.position.y < _destroyHeight)
         {
             // If player is destroyed, do not respawn when off bottom of screen
-            if(_player!= null && !_isDestroyed) 
+            if(_player != null && !_isDestroyed) 
             {
                 Respawn();
             }

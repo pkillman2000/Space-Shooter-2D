@@ -39,6 +39,7 @@ public class EnemyBoss : MonoBehaviour
     [SerializeField]
     private bool _canSpawn;
 
+    // External Classes
     private AudioSource _audioSource;
     private UIManager _uiManager;
     private WaveManager _waveManager;
@@ -62,7 +63,6 @@ public class EnemyBoss : MonoBehaviour
         {
             Debug.LogWarning("Wave Manager is Null");
         }
-
 
         _isMoving = true;
         _turretsDestroyed = false;

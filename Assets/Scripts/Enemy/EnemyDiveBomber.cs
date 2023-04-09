@@ -29,7 +29,6 @@ public class EnemyDiveBomber : MonoBehaviour
     [SerializeField]
     [Range(0f, 1f)]
     private float _bombVolume;
-    private AudioSource _audioSource;
 
     [Header("Weapons")]
     [SerializeField]
@@ -53,6 +52,8 @@ public class EnemyDiveBomber : MonoBehaviour
     private Player _player;
     private UIManager _uiManager;
     private WaveManager _waveManager;
+    private AudioSource _audioSource;
+
 
     void Start()
     {
@@ -84,12 +85,10 @@ public class EnemyDiveBomber : MonoBehaviour
 
         _canFire = true;
         StartCoroutine(DropBombs());
-
     }
 
     void Update()
     {
-        // Select Path, then waypoints in the path
         CalculateMovement();
     }
 
@@ -114,7 +113,7 @@ public class EnemyDiveBomber : MonoBehaviour
         _waypoints = _paths[_currentPathID].GetComponent<PathData>().GetWayPoints();
     }
 
-    private void CalculateMovement()
+    private void CalculateMovement() // Move along path
     {
         if (Vector3.Distance(transform.position, _waypoints[_currentWaypointID].transform.position) < 0.01f)
         {
